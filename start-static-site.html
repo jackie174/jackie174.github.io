@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <title>Lab Site - Start static site</title>
+        <meta charset="utf-8" />
+        <meta name="generator" content="Pelican" />
+        <link href="https://jackie174.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Lab Site Full Atom Feed" />
+
+  <link rel="stylesheet" type="text/css" href="https://jackie174.github.io/theme/style.css" />
+
+
+
+
+
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="https://jackie174.github.io/">Lab Site</a></h1>
+        </header><!-- /#banner -->
+        <nav id="menu"><ul>
+            <li><a href="https://jackie174.github.io/category/blog.html">Blog</a></li>
+            <li class="active"><a href="https://jackie174.github.io/category/doc.html">Doc</a></li>
+            <li><a href="https://jackie174.github.io/category/review.html">Review</a></li>
+        </ul></nav><!-- /#menu -->
+<section id="content" class="body">
+  <header>
+    <h2 class="entry-title">
+      <a href="https://jackie174.github.io/start-static-site.html" rel="bookmark"
+         title="Permalink to Start static site">Start static site</a></h2>
+ 
+  </header>
+  <footer class="post-info">
+    <time class="published" datetime="2022-02-10T08:00:00-07:00">
+      Thu 10 February 2022
+    </time>
+    <address class="vcard author">
+      By           <a class="url fn" href="https://jackie174.github.io/author/peng-cheng.html">peng cheng</a>
+    </address>
+    <div class="category">
+        Category: <a href="https://jackie174.github.io/category/doc.html">Doc</a>
+    </div>
+  </footer><!-- /.post-info -->
+  <div class="entry-content">
+    <p>Step 1:<br>
+Create repo in github<br>
+https://github.com/jackie174/jackie174.github.io.git  </p>
+<p>Step2:<br>
+Intsall pelican markdown  </p>
+<p>Step3:<br>
+pelican-quickstart<br>
+Create Article in the /content<br>
+make devserver  </p>
+<p>Step4:<br>
+Deploy page to Github<br>
+make github</p>
+<p>Command:  </p>
+<p>git clone {git-repo-url}<br>
+cd {git-clone-url}<br>
+git checkout -b src<br>
+virtualenv venv --python=python3<br>
+source venv/bin/activate<br>
+pip install pelican markdown<br>
+pelican-quickstart  </p>
+<blockquote>
+<p>Where do you want to create your new web site? [.] 
+What will be the title of this web site? My Cool Site
+Who will be the author of this web site? Danger Doggo
+What will be the default language of this web site? [en] 
+Do you want to specify a URL prefix? e.g., https://example.com   (Y/n) n
+Do you want to enable article pagination? (Y/n) Y
+How many articles per page do you want? [10] 
+What is your time zone? [Europe/Paris] America/Edmonton
+Do you want to generate a tasks.py/Makefile to automate generation and publishing? (Y/n) Y
+Do you want to upload your website using FTP? (y/N) N
+Do you want to upload your website using SSH? (y/N) N
+Do you want to upload your website using Dropbox? (y/N) N
+Do you want to upload your website using S3? (y/N) N
+Do you want to upload your website using Rackspace Cloud Files? (y/N) N
+Do you want to upload your website using GitHub Pages? (y/N) Y
+Is this your personal page (username.github.io)? (y/N) Y
+Done. Your new project is available at /path/to/your/project</p>
+</blockquote>
+<p>mkdir -p templates/mytheme/{static,templates}<br>
+touch templates/mytheme/templates/base.html<br>
+touch templates/mytheme/static/style.css  </p>
+<p>Add below into templates/mytheme/templates/base.html.  </p>
+<p>{% extends "!simple/base.html" %}  </p>
+<p _="%" endblock>{% block head %}<br>
+{{ super() }}<br>
+  <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/style.css" /><br></p>
+<p>Add below into emplates/mytheme/static/style.css  </p>
+<p>html, body {<br>
+  margin: 0;<br>
+  border: 0;<br>
+  font-size: 100%;<br>
+  background-color: #000000;<br>
+  color: #ffffff;<br>
+}<br>
+Add below theme to your pelicanconf.py  </p>
+<p>THEME = 'templates/mytheme'  </p>
+<p>In publishconf.py, Comment out CATEGORY_FEED_ATOM  </p>
+  </div><!-- /.entry-content -->
+</section>
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="https://getpelican.com/">Pelican</a>,
+                which takes great advantage of <a href="https://www.python.org/">Python</a>.
+                </address><!-- /#about -->
+        </footer><!-- /#contentinfo -->
+</body>
+</html>

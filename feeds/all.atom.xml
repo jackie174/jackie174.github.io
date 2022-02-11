@@ -1,5 +1,79 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Lab Site</title><link href="https://jackie174.github.io/" rel="alternate"></link><link href="https://jackie174.github.io/feeds/all.atom.xml" rel="self"></link><id>https://jackie174.github.io/</id><updated>2022-02-10T08:00:00-07:00</updated><entry><title>My Second Article</title><link href="https://jackie174.github.io/my-second-article.html" rel="alternate"></link><published>2022-02-10T08:00:00-07:00</published><updated>2022-02-10T08:00:00-07:00</updated><author><name>peng cheng</name></author><id>tag:jackie174.github.io,2022-02-10:/my-second-article.html</id><content type="html">&lt;p&gt;I like free static web hosting.&lt;/p&gt;</content><category term="Blog"></category></entry><entry><title>My First Article</title><link href="https://jackie174.github.io/my-first-article.html" rel="alternate"></link><published>2019-01-07T08:00:00-07:00</published><updated>2019-01-07T08:00:00-07:00</updated><author><name>peng cheng</name></author><id>tag:jackie174.github.io,2019-01-07:/my-first-article.html</id><content type="html">&lt;p&gt;I like free static web hosting.&lt;/p&gt;</content><category term="Blog"></category></entry><entry><title>My Fourth Review</title><link href="https://jackie174.github.io/my-fourth-review.html" rel="alternate"></link><published>2010-12-03T10:20:00-07:00</published><updated>2010-12-03T10:20:00-07:00</updated><author><name>peng cheng</name></author><id>tag:jackie174.github.io,2010-12-03:/my-fourth-review.html</id><content type="html">&lt;p&gt;Following is a review of my favorite mechanical keyboard.&lt;/p&gt;</content><category term="Review"></category></entry><entry><title>My Third Review</title><link href="https://jackie174.github.io/my-third-review.html" rel="alternate"></link><published>2010-12-03T10:20:00-07:00</published><updated>2010-12-03T10:20:00-07:00</updated><author><name>peng cheng</name></author><id>tag:jackie174.github.io,2010-12-03:/my-third-review.html</id><content type="html">&lt;p&gt;Following is a review of my favorite mechanical keyboard.&lt;/p&gt;</content><category term="Review"></category></entry><entry><title>Start Cmput 404 project</title><link href="https://jackie174.github.io/start-cmput-404-project.html" rel="alternate"></link><published>2010-12-03T10:20:00-07:00</published><updated>2010-12-03T10:20:00-07:00</updated><author><name>peng cheng</name></author><id>tag:jackie174.github.io,2010-12-03:/start-cmput-404-project.html</id><summary type="html">&lt;p&gt;Window:  &lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Lab Site</title><link href="https://jackie174.github.io/" rel="alternate"></link><link href="https://jackie174.github.io/feeds/all.atom.xml" rel="self"></link><id>https://jackie174.github.io/</id><updated>2022-02-10T08:00:00-07:00</updated><entry><title>My Second Article</title><link href="https://jackie174.github.io/my-second-article.html" rel="alternate"></link><published>2022-02-10T08:00:00-07:00</published><updated>2022-02-10T08:00:00-07:00</updated><author><name>peng cheng</name></author><id>tag:jackie174.github.io,2022-02-10:/my-second-article.html</id><content type="html">&lt;p&gt;I like free static web hosting.&lt;/p&gt;</content><category term="Blog"></category></entry><entry><title>Start static site</title><link href="https://jackie174.github.io/start-static-site.html" rel="alternate"></link><published>2022-02-10T08:00:00-07:00</published><updated>2022-02-10T08:00:00-07:00</updated><author><name>peng cheng</name></author><id>tag:jackie174.github.io,2022-02-10:/start-static-site.html</id><summary type="html">&lt;p&gt;Step 1:&lt;br&gt;
+Create repo in github&lt;br&gt;
+https://github.com/jackie174/jackie174.github.io.git  &lt;/p&gt;
+&lt;p&gt;Step2:&lt;br&gt;
+Intsall pelican markdown  &lt;/p&gt;
+&lt;p&gt;Step3:&lt;br&gt;
+pelican-quickstart&lt;br&gt;
+Create Article in the /content&lt;br&gt;
+make devserver  &lt;/p&gt;
+&lt;p&gt;Step4:&lt;br&gt;
+Deploy page to Github&lt;br&gt;
+make github&lt;/p&gt;
+&lt;p&gt;Command:  &lt;/p&gt;
+&lt;p&gt;git clone {git-repo-url}&lt;br&gt;
+cd {git-clone-url}&lt;br&gt;
+git checkout -b src&lt;br&gt;
+virtualenv venv --python=python3&lt;br&gt;
+source venv …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Step 1:&lt;br&gt;
+Create repo in github&lt;br&gt;
+https://github.com/jackie174/jackie174.github.io.git  &lt;/p&gt;
+&lt;p&gt;Step2:&lt;br&gt;
+Intsall pelican markdown  &lt;/p&gt;
+&lt;p&gt;Step3:&lt;br&gt;
+pelican-quickstart&lt;br&gt;
+Create Article in the /content&lt;br&gt;
+make devserver  &lt;/p&gt;
+&lt;p&gt;Step4:&lt;br&gt;
+Deploy page to Github&lt;br&gt;
+make github&lt;/p&gt;
+&lt;p&gt;Command:  &lt;/p&gt;
+&lt;p&gt;git clone {git-repo-url}&lt;br&gt;
+cd {git-clone-url}&lt;br&gt;
+git checkout -b src&lt;br&gt;
+virtualenv venv --python=python3&lt;br&gt;
+source venv/bin/activate&lt;br&gt;
+pip install pelican markdown&lt;br&gt;
+pelican-quickstart  &lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Where do you want to create your new web site? [.] 
+What will be the title of this web site? My Cool Site
+Who will be the author of this web site? Danger Doggo
+What will be the default language of this web site? [en] 
+Do you want to specify a URL prefix? e.g., https://example.com   (Y/n) n
+Do you want to enable article pagination? (Y/n) Y
+How many articles per page do you want? [10] 
+What is your time zone? [Europe/Paris] America/Edmonton
+Do you want to generate a tasks.py/Makefile to automate generation and publishing? (Y/n) Y
+Do you want to upload your website using FTP? (y/N) N
+Do you want to upload your website using SSH? (y/N) N
+Do you want to upload your website using Dropbox? (y/N) N
+Do you want to upload your website using S3? (y/N) N
+Do you want to upload your website using Rackspace Cloud Files? (y/N) N
+Do you want to upload your website using GitHub Pages? (y/N) Y
+Is this your personal page (username.github.io)? (y/N) Y
+Done. Your new project is available at /path/to/your/project&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;mkdir -p templates/mytheme/{static,templates}&lt;br&gt;
+touch templates/mytheme/templates/base.html&lt;br&gt;
+touch templates/mytheme/static/style.css  &lt;/p&gt;
+&lt;p&gt;Add below into templates/mytheme/templates/base.html.  &lt;/p&gt;
+&lt;p&gt;{% extends "!simple/base.html" %}  &lt;/p&gt;
+&lt;p _="%" endblock&gt;{% block head %}&lt;br&gt;
+{{ super() }}&lt;br&gt;
+  &lt;link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/style.css" /&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;Add below into emplates/mytheme/static/style.css  &lt;/p&gt;
+&lt;p&gt;html, body {&lt;br&gt;
+  margin: 0;&lt;br&gt;
+  border: 0;&lt;br&gt;
+  font-size: 100%;&lt;br&gt;
+  background-color: #000000;&lt;br&gt;
+  color: #ffffff;&lt;br&gt;
+}&lt;br&gt;
+Add below theme to your pelicanconf.py  &lt;/p&gt;
+&lt;p&gt;THEME = 'templates/mytheme'  &lt;/p&gt;
+&lt;p&gt;In publishconf.py, Comment out CATEGORY_FEED_ATOM  &lt;/p&gt;</content><category term="Doc"></category></entry><entry><title>My First Article</title><link href="https://jackie174.github.io/my-first-article.html" rel="alternate"></link><published>2019-01-07T08:00:00-07:00</published><updated>2019-01-07T08:00:00-07:00</updated><author><name>peng cheng</name></author><id>tag:jackie174.github.io,2019-01-07:/my-first-article.html</id><content type="html">&lt;p&gt;I like free static web hosting.&lt;/p&gt;</content><category term="Blog"></category></entry><entry><title>My Fourth Review</title><link href="https://jackie174.github.io/my-fourth-review.html" rel="alternate"></link><published>2010-12-03T10:20:00-07:00</published><updated>2010-12-03T10:20:00-07:00</updated><author><name>peng cheng</name></author><id>tag:jackie174.github.io,2010-12-03:/my-fourth-review.html</id><content type="html">&lt;p&gt;Following is a review of my favorite mechanical keyboard.&lt;/p&gt;</content><category term="Review"></category></entry><entry><title>My Third Review</title><link href="https://jackie174.github.io/my-third-review.html" rel="alternate"></link><published>2010-12-03T10:20:00-07:00</published><updated>2010-12-03T10:20:00-07:00</updated><author><name>peng cheng</name></author><id>tag:jackie174.github.io,2010-12-03:/my-third-review.html</id><content type="html">&lt;p&gt;Following is a review of my favorite mechanical keyboard.&lt;/p&gt;</content><category term="Review"></category></entry><entry><title>Start Cmput 404 project</title><link href="https://jackie174.github.io/start-cmput-404-project.html" rel="alternate"></link><published>2010-12-03T10:20:00-07:00</published><updated>2010-12-03T10:20:00-07:00</updated><author><name>peng cheng</name></author><id>tag:jackie174.github.io,2010-12-03:/start-cmput-404-project.html</id><summary type="html">&lt;p&gt;Window:  &lt;/p&gt;
 &lt;p&gt;pip install virtualenv&lt;br&gt;
 python -m venv ./venv&lt;br&gt;
 venv\Scripts\activate.bat&lt;br&gt;
