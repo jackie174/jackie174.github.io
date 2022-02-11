@@ -1,2 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Lab Site</title><link href="https://jackie174.github.io/" rel="alternate"></link><link href="https://jackie174.github.io/feeds/all.atom.xml" rel="self"></link><id>https://jackie174.github.io/</id><updated>2019-01-07T08:00:00-07:00</updated><entry><title>My First Article</title><link href="https://jackie174.github.io/my-first-article.html" rel="alternate"></link><published>2019-01-07T08:00:00-07:00</published><updated>2019-01-07T08:00:00-07:00</updated><author><name>peng cheng</name></author><id>tag:jackie174.github.io,2019-01-07:/my-first-article.html</id><content type="html">&lt;p&gt;I like free static web hosting.&lt;/p&gt;</content><category term="Blog"></category></entry></feed>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Lab Site</title><link href="https://jackie174.github.io/" rel="alternate"></link><link href="https://jackie174.github.io/feeds/all.atom.xml" rel="self"></link><id>https://jackie174.github.io/</id><updated>2022-02-10T08:00:00-07:00</updated><entry><title>My Second Article</title><link href="https://jackie174.github.io/my-second-article.html" rel="alternate"></link><published>2022-02-10T08:00:00-07:00</published><updated>2022-02-10T08:00:00-07:00</updated><author><name>peng cheng</name></author><id>tag:jackie174.github.io,2022-02-10:/my-second-article.html</id><content type="html">&lt;p&gt;I like free static web hosting.&lt;/p&gt;</content><category term="Blog"></category></entry><entry><title>My First Article</title><link href="https://jackie174.github.io/my-first-article.html" rel="alternate"></link><published>2019-01-07T08:00:00-07:00</published><updated>2019-01-07T08:00:00-07:00</updated><author><name>peng cheng</name></author><id>tag:jackie174.github.io,2019-01-07:/my-first-article.html</id><content type="html">&lt;p&gt;I like free static web hosting.&lt;/p&gt;</content><category term="Blog"></category></entry><entry><title>My Fourth Review</title><link href="https://jackie174.github.io/my-fourth-review.html" rel="alternate"></link><published>2010-12-03T10:20:00-07:00</published><updated>2010-12-03T10:20:00-07:00</updated><author><name>peng cheng</name></author><id>tag:jackie174.github.io,2010-12-03:/my-fourth-review.html</id><content type="html">&lt;p&gt;Following is a review of my favorite mechanical keyboard.&lt;/p&gt;</content><category term="Review"></category></entry><entry><title>My Third Review</title><link href="https://jackie174.github.io/my-third-review.html" rel="alternate"></link><published>2010-12-03T10:20:00-07:00</published><updated>2010-12-03T10:20:00-07:00</updated><author><name>peng cheng</name></author><id>tag:jackie174.github.io,2010-12-03:/my-third-review.html</id><content type="html">&lt;p&gt;Following is a review of my favorite mechanical keyboard.&lt;/p&gt;</content><category term="Review"></category></entry><entry><title>Start Cmput 404 project</title><link href="https://jackie174.github.io/start-cmput-404-project.html" rel="alternate"></link><published>2010-12-03T10:20:00-07:00</published><updated>2010-12-03T10:20:00-07:00</updated><author><name>peng cheng</name></author><id>tag:jackie174.github.io,2010-12-03:/start-cmput-404-project.html</id><summary type="html">&lt;p&gt;Window:&lt;/p&gt;
+&lt;p&gt;pip install virtualenv
+python -m venv ./venv
+venv\Scripts\activate.bat
+python3 -m pip install Django
+django-admin startproject todo_backend
+python3 manage.py startapp api
+python3 manage.py migrate
+python3 manage.py makemigrations api
+python3 manage.py sqlmigrate api 0001
+python3 manage.py migrate
+python manage.py createsuperuser
+python …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Window:&lt;/p&gt;
+&lt;p&gt;pip install virtualenv
+python -m venv ./venv
+venv\Scripts\activate.bat
+python3 -m pip install Django
+django-admin startproject todo_backend
+python3 manage.py startapp api
+python3 manage.py migrate
+python3 manage.py makemigrations api
+python3 manage.py sqlmigrate api 0001
+python3 manage.py migrate
+python manage.py createsuperuser
+python manage.py runserver
+python -m pip install djangorestframework&lt;/p&gt;
+&lt;p&gt;Linux:&lt;/p&gt;
+&lt;p&gt;pip install virtualenv
+virtualenv venv --python=python3.7
+source venv/bin/activate
+python3 -m pip install Django
+django-admin startproject todo_backend
+python3 manage.py startapp api
+python3 manage.py migrate
+python3 manage.py makemigrations api
+python3 manage.py sqlmigrate api 0001
+python3 manage.py migrate
+python manage.py createsuperuser
+python manage.py runserver
+python -m pip install djangorestframework&lt;/p&gt;</content><category term="Doc"></category></entry></feed>
