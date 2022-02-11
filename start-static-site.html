@@ -42,19 +42,19 @@
     </div>
   </footer><!-- /.post-info -->
   <div class="entry-content">
-    <p>Step 1:<br>
-Create repo in github<br>
+    <h2>Step 1:</h2>
+<p>Create repo in github<br>
 https://github.com/jackie174/jackie174.github.io.git  </p>
-<p>Step2:<br>
-Intsall pelican markdown  </p>
-<p>Step3:<br>
-pelican-quickstart<br>
+<h2>Step2:</h2>
+<p>Intsall pelican markdown  </p>
+<h2>Step3:</h2>
+<p>pelican-quickstart<br>
 Create Article in the /content<br>
 make devserver  </p>
-<p>Step4:<br>
-Deploy page to Github<br>
+<h2>Step4:</h2>
+<p>Deploy page to Github<br>
 make github</p>
-<p>Command:  </p>
+<h2>Command:</h2>
 <p>git clone {git-repo-url}<br>
 cd {git-clone-url}<br>
 git checkout -b src<br>
@@ -62,44 +62,45 @@ virtualenv venv --python=python3<br>
 source venv/bin/activate<br>
 pip install pelican markdown<br>
 pelican-quickstart  </p>
-<blockquote>
-<p>Where do you want to create your new web site? [.] 
-What will be the title of this web site? My Cool Site
-Who will be the author of this web site? Danger Doggo
-What will be the default language of this web site? [en] 
-Do you want to specify a URL prefix? e.g., https://example.com   (Y/n) n
-Do you want to enable article pagination? (Y/n) Y
-How many articles per page do you want? [10] 
-What is your time zone? [Europe/Paris] America/Edmonton
-Do you want to generate a tasks.py/Makefile to automate generation and publishing? (Y/n) Y
-Do you want to upload your website using FTP? (y/N) N
-Do you want to upload your website using SSH? (y/N) N
-Do you want to upload your website using Dropbox? (y/N) N
-Do you want to upload your website using S3? (y/N) N
-Do you want to upload your website using Rackspace Cloud Files? (y/N) N
-Do you want to upload your website using GitHub Pages? (y/N) Y
-Is this your personal page (username.github.io)? (y/N) Y
-Done. Your new project is available at /path/to/your/project</p>
-</blockquote>
 <p>mkdir -p templates/mytheme/{static,templates}<br>
 touch templates/mytheme/templates/base.html<br>
 touch templates/mytheme/static/style.css  </p>
-<p>Add below into templates/mytheme/templates/base.html.  </p>
+<h2>Add below into templates/mytheme/templates/base.html.</h2>
 <p>{% extends "!simple/base.html" %}  </p>
 <p _="%" endblock>{% block head %}<br>
 {{ super() }}<br>
   <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/style.css" /><br></p>
-<p>Add below into emplates/mytheme/static/style.css  </p>
+<h2>Add below into emplates/mytheme/static/style.css</h2>
 <p>html, body {<br>
   margin: 0;<br>
   border: 0;<br>
   font-size: 100%;<br>
   background-color: #000000;<br>
   color: #ffffff;<br>
-}<br>
-Add below theme to your pelicanconf.py  </p>
+}  </p>
+<h2>Add below theme to your pelicanconf.py</h2>
 <p>THEME = 'templates/mytheme'  </p>
-<p>In publishconf.py, Comment out CATEGORY_FEED_ATOM  </p>
+<h2>In publishconf.py, Comment out CATEGORY_FEED_ATOM</h2>
+<h2>End</h2>
+<blockquote>
+<p>Where do you want to create your new web site? [.] <br>
+What will be the title of this web site? My Cool Site<br>
+Who will be the author of this web site? Danger Doggo<br>
+What will be the default language of this web site? [en] <br>
+Do you want to specify a URL prefix? e.g., https://example.com   (Y/n) n<br>
+Do you want to enable article pagination? (Y/n) Y<br>
+How many articles per page do you want? [10] <br>
+What is your time zone? [Europe/Paris] America/Edmonton<br>
+Do you want to generate a tasks.py/Makefile to automate generation and publishing? (Y/n) Y<br>
+Do you want to upload your website using FTP? (y/N) N<br>
+Do you want to upload your website using SSH? (y/N) N<br>
+Do you want to upload your website using Dropbox? (y/N) N<br>
+Do you want to upload your website using S3? (y/N) N<br>
+Do you want to upload your website using Rackspace Cloud Files? (y/N) N<br>
+Do you want to upload your website using GitHub Pages? (y/N) Y<br>
+Is this your personal page (username.github.io)? (y/N) Y<br>
+Done. Your new project is available at /path/to/your/project  </p>
+</blockquote>
   </div><!-- /.entry-content -->
 </section>
         <footer id="contentinfo" class="body">
