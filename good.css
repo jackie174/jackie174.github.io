@@ -1,0 +1,109 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Times New Roman";
+}
+
+#wood {
+    height: 1em;
+    background-size: 100% 100%;
+    width:100%;
+}
+#header {
+    display: center;
+    flex-direction: row;
+    color: rgb(255, 254, 185);
+    height: 10em;
+    background: radial-gradient(rgb(90, 206, 252), rgb(47, 167, 247), #008cff);
+}
+
+#header h1{
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 2em;
+}
+#profile_photo {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(73, 59, 59, 0.801);
+}
+
+.navbar a {
+    color: rgb(255, 255, 255);
+    padding: 15px 25px;
+}
+
+
+.navbar a:hover {
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+.row {  
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+}
+
+.side {
+    -ms-flex: 15%; /* IE10 */
+    flex: 15%;
+    background-color: #ffffff;
+    padding: 25px;
+}
+
+.main {   
+    -ms-flex: 85%; /* IE10 */
+    flex: 85%;
+    background-color: white;
+    padding: 20px;
+}
+#Important-points{
+    position: absolute;
+    top: 15em;
+    right: 1em;
+    width: 15%;
+    background-color: lightgray;
+    text-align: center;
+    padding: 1em;
+
+}
+#Important-points h3 {
+    line-height: 2em;
+    color: rgb(32, 172, 228);
+}
+
+#Project {
+    padding: 300px;
+    font-size: larger;
+    text-align: center;
+    background: rgb(255, 254, 254);
+
+}
+
+/* Responsive Layout - Stack two columns on top of each other when the device width is less than 700px */
+@media screen and (max-width: 700px) {
+    .row {   
+        flex-direction: column;
+    }
+}
+
+/* Responsive Layout - When the width of the screen device is less than 400px, the navigation bar is stacked on top of each other */
+@media screen and (max-width: 400px) {
+    .navbar a {
+        float: none;
+        width: 100%;
+    }
+}
