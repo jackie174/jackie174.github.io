@@ -1,93 +1,73 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>peng cheng</title>
-<meta charset="UTF-8">
-<link rel="stylesheet" href="https://jackie174.github.io/theme/good.css">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="shortcut icon" type="image/x-icon" href="favicon.ico?">
-<link rel="stylesheet" type="text/css" href="https://jackie174.github.io/theme/style.css" />
-<link href="https://jackie174.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="peng cheng Full Atom Feed" />
+  <title>peng cheng</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://jackie174.github.io/theme/good.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico?">
+    <link rel="stylesheet" type="text/css" href="https://jackie174.github.io/theme/style.css" />
+    <link href="https://jackie174.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="peng cheng Full Atom Feed" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+  body {
+    position: relative; 
+  }
+  #section1 {padding-top:50px;height:500px;color: #fff; background-color: #1E88E5;}
+  #section2 {padding-top:50px;height:auto;color: #fff; background-color: #673ab7;}
+  #section3 {padding-top:50px;height:500px;color: #fff; background-color: #ff9800;}
+  #section41 {padding-top:50px;height:500px;color: #fff; background-color: #00bcd4;}
+  #section42 {padding-top:50px;height:500px;color: #fff; background-color: #009688;}
+  #section5 {padding-top:50px;height: 250px;;color: #fff; background-color: #00ffc8;}
+  </style>
 </head>
-<body>
-  <div id="header">
-    <img id="profile_photo" src="../images/profile.jpg">
-    <h1 >Hi, I'm Peng Cheng</h1>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<nav class="navbar navbar-inverse  navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">                                   </a>
+    </div>
+    <div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#section1">About me</a></li>
+          <li><a href="#section2">Skill</a></li>
+          <li><a href="#section3">Project</a></li>
+          <li><a href="#section5">Contact Me</a></li>
+          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">blog <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#section41">cs</a></li>
+              <li><a href="#section42">life</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
   </div>
+</nav>    
 
-
-<div class="navbar">
-  <a href="#Who-I-am" >Who I am</a>
-  <a href="#History" >History</a>
-  <a href="#what-I-have" >What I have</a>
-  <a href="#Important-points" >What I can do</a>
+<div id="section1" class="container-fluid">
+  <h1>About Me</h1>
+  <p>I am a student who is studying at the University of Alberta. 
+    My major is Computing Science and I also enroll in BSc Specialization Programs.
+    I'm interested in web applications and Android apps. 
+    I may not know all of the languages that we have, but I am a fast learner. 
+    I have also been volunteering for a whole year on the Safe-walk.
+  </p>
 </div>
-
-
-
-
-
-<div class="row">
-	<div class="main">
-      <h2>Who I am</h2>
-      <div id = "Who-I-am">
-      <p>I am a student who is studying at the University of Alberta. 
-        My major is Computing Science and I also enroll in BSc Specialization Programs.
-        I'm interested in web applications and Android apps. 
-        I may not know all of the languages that we have, but I am a fast learner. 
-        I have also been volunteering for a whole year on the Safe-walk.
-      </p>
-      
-      </div>
-      <h2>History</h2>
-      <div id ="History">
-        <p>I'm not starting CS in the fresh year at University, 
-          I just transferred to CS from Economic. 
-          I find that I'm more interested in computing science. 
-          I want to know how does the code is to make an App. 
-          I want to more focus on the Computing science, 
-          so I apply for BSc Specialization Programs. </p>
-      </div>
-      <div id ="what-I-have">
-          <h2>What I have</h2>
-          <p>When I take some compting courses in the University, 
-            I make some interesting project and Apps. </p>
-          <div >
-            <li>
-              Android App: <a href="https://github.com/CMPUT301F21T27/TEAM404/wiki">Habit Tracker</a>
-            </li>
-            <li>
-                Web App: <a href="https://edmontonsafewalk.ca/">Edmonton Safewalk</a>
-              </li>
-            <li>
-              WebgL: <a href="https://github.com/jackie174/Cmput411-A6">Olympic symbol</a><br>
-            </li>
-            <li> 
-              Volunteer : <a href="https://www.su.ualberta.ca/services/safewalk/">Safe walk</a>
-            </li>
-
-            <p>I also take some course that are helpful for my job.</p>
-            <p> Cmput 174/175</p>
-            <p> Cmput 204</p>
-            <p> Cmput 201</p>
-            <p> Cmput 301</p>
-            <p> Cmput 365/366</p>
-            <p> Cmput 307</p>
-            <p> Cmput 411</p>
-            <p> Cmput 401</p>
-            <p> Cmput 404</p>
-            <p> Cmput 291</p>
-            <p> Cmput 307</p>
-
-          </div>
-      </div>
-      
-  </div>
-  <div class="side">
-    <div id ="Important-points">
-      <h2>Important points</h2>
-      <div style="height:880px;">
-        <h3>Looking for</h3>
+<div id="section2" class="container-fluid">
+  <h1>Skill</h1>
+  <h3>Looking for</h3>
         <p>Frontend, Backend, Android app developer</p>
         <h3>Languages</h3>
         <p>Python, C, Java, Javascript, WebGL</p>
@@ -101,17 +81,52 @@
         <p>Android Studio, Visual Studio Code</p>
         <h3>Speake</h3>
         <p>Chinese, English</p>
-        <h3>Contact Me</h3>
-      <a href="mailto: pcheng1@ualberta.ca">Email</a>
-      </div>
-  </div>
-  </div>
+</div>
+<div id="section3" class="container-fluid">
+  <h1>Project</h1>
+  <p>When I take some compting courses in the University, 
+    I make some interesting project and Apps. </p>
+  <div >
+    <li>
+      Android App: <a href="https://github.com/CMPUT301F21T27/TEAM404/wiki">Habit Tracker</a>
+    </li>
+    <li>
+        Web App: <a href="https://edmontonsafewalk.ca/">Edmonton Safewalk</a>
+      </li>
+    <li>
+      WebgL: <a href="https://github.com/jackie174/Cmput411-A6">Olympic symbol</a><br>
+    </li>
+    <li> 
+      Volunteer : <a href="https://www.su.ualberta.ca/services/safewalk/">Safe walk</a>
+    </li>
+    </div>
+</div>
+<div id="section41" class="container-fluid">
+  <h1>CS</h1>
+  <p>I also take some course that are helpful for my job.</p>
+            <p> Cmput 174/175</p>
+            <p> Cmput 204</p>
+            <p> Cmput 201</p>
+            <p> Cmput 301</p>
+            <p> Cmput 365/366</p>
+            <p> Cmput 307</p>
+            <p> Cmput 411</p>
+            <p> Cmput 401</p>
+            <p> Cmput 404</p>
+            <p> Cmput 291</p>
+            <p> Cmput 307</p>
   
 </div>
-
-<div id="Project" >
-  <h2>Project</h2>
-    <a href="https://github.com/jackie174">GitHub</a>
+<div id="section42" class="container-fluid">
+  <h1>life</h1>
+ 
 </div>
+<div id="section5" class="container-fluid">
+    <h1>Contact Me</h1>
+    <a href="mailto: pcheng1@ualberta.ca">pcheng1@ualberta.ca</a><br>
+    <a href = "https://www.linkedin.com/in/peng-cheng-345b9622b/">Linked</a><br>
+    <a href="https://github.com/jackie174">GitHub</a>
+
+    </div>
 </body>
 </html>
