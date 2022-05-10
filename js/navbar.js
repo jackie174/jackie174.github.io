@@ -1,7 +1,6 @@
 let navbar = document.getElementById("main-nav");
 let navPos = navbar.getBoundingClientRect().top;
 let navbarLinks = document.querySelectorAll("nav a");
-console.log("--", navPos)
 window.addEventListener("scroll", e => {
   
     let scrollPos = window.scrollY;

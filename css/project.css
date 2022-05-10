@@ -40,153 +40,141 @@
     left: 300%;
 }
   @keyframes box {
-  /* 0-4s */
+
   0%, 10% {
-    margin-left: 0px;
+  margin-left: 0px;
   }
-  /* 4-8s */
+
   15%, 25% {
-    margin-left: -100%;
+  margin-left: -100%;
   }
-  /* 8-12s */
   30%, 40% {
-    margin-left: -200%;
+  margin-left: -200%;
   }
-  /* 12-16s */
   45%, 55% {
-    margin-left: -300%;
+  margin-left: -300%;
   }
-  /* 4-8s */
   60%, 70% {
-    margin-left: -200%;
+  margin-left: -200%;
   }
-  /* 8-12s */
   75%, 85% {
-    margin-left: -100%;
+  margin-left: -100%;
   }
-  /* 12-16s */
   90%, 100% {
-    margin-left: 0px;
+  margin-left: 0px;
   }
 
-  }
-  .image {
-    opacity: 1;
-    display: block;
-    width: 100%;
-    height: 100%;
-    transition: .5s ease;
-    backface-visibility: hidden;
-  }
+}
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: 100%;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
 
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+
+div.gallery:hover .image {
+  opacity: 0.3;
+}
+
+div.gallery:hover .middle {
+  opacity: 1;
+}
+.text {
+  background-color: #4c98af;
+  color: white;
+  font-size: 10px;
+  padding: 5px 10px;
+  text-align: center;
+}
+a#more{
+  font-size: 25px;
+  padding: 5px 25px;
+  align-items: center;
+  margin-bottom: 0%
+
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 0;
+  transition: 2s width;
   
-  .middle {
-    transition: .5s ease;
-    opacity: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%)
-  }
-  
-  div.gallery:hover .image {
-    opacity: 0.3;
-  }
-  
-  div.gallery:hover .middle {
-    opacity: 1;
-  }
-  .text {
-    background-color: #4c98af;
-    color: white;
-    font-size: 10px;
-    padding: 5px 10px;
-    text-align: center;
-  }
-  a#more{
-    font-size: 25px;
-    padding: 5px 25px;
-    align-items: center;
-    margin-bottom: 0%
+}
+.responsive.open {
+  width: 24.99999%;
+  height:100%
+}
 
-  }
-
+@media only screen and (min-width: 701px) {
   .responsive {
-    padding: 0 6px;
-    float: left;
-    width: 0;
-    transition: 2s width;
-    
-  }
-  .responsive.open {
     width: 24.99999%;
-    height:100%
+    margin: 6px 0;
   }
+  .carousel-warp {
+      min-height: 250px;
+  }
+}
+@media only screen and (max-width: 1500px) {
+  .responsive {
+    width: 32.99999%;
+    margin: 6px 0;
+  }
+  .carousel-warp {
+      min-height: 250px;
+      
+  
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+  .carousel-warp {
+      min-height: 300px;
+      
+  
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+  .carousel-warp {
+      min-height: 250px;
+      
+  
+  }
+}
 
-  @media only screen and (min-width: 701px) {
-    .responsive {
-      width: 24.99999%;
-      margin: 6px 0;
-    }
-    .carousel-warp {
-        min-height: 250px;
-    }
+@media only screen and (max-width: 800px) {
+  .responsive {
+    width: 100%;
   }
-  @media only screen and (max-width: 1500px) {
-    .responsive {
-      width: 32.99999%;
-      margin: 6px 0;
-    }
-    .carousel-warp {
-        min-height: 250px;
-       
-    
-    }
-  }
-  @media only screen and (max-width: 1200px) {
-    .responsive {
-      width: 49.99999%;
-      margin: 6px 0;
-    }
-    .carousel-warp {
-        min-height: 300px;
-       
-    
-    }
-  }
-  @media only screen and (max-width: 1000px) {
-    .responsive {
-      width: 49.99999%;
-      margin: 6px 0;
-    }
-    .carousel-warp {
-        min-height: 250px;
-       
-    
-    }
-  }
+  .carousel-warp {
+      min-height: 330px;
+      
   
-  @media only screen and (max-width: 800px) {
-    .responsive {
-      width: 100%;
-    }
-    .carousel-warp {
-        min-height: 330px;
-       
-    
-    }
   }
-  /* @media only screen and (min-width: 701px) {
-    .carousel-warp {
-      width:100%;
-      height: fit-content;
-    }
-  } */
-  
-  
-  .clearfix:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}

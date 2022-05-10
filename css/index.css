@@ -8,16 +8,16 @@ body {
   
 }* {
     box-sizing: border-box;
-  }
+}
 
 .img-center {
-    border-radius: 50%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 100px;
-    width: 50%;
-  }
+  border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  width: 50%;
+}
 
 #main-nav {
   background-color: #1e1e1e;
@@ -60,44 +60,44 @@ nav a:hover {
     margin-top: -15px;
     float: left;
     overflow: hidden;
-  }
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin-top: 0;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   
-  .dropdown .dropbtn {
-    font-size: 16px;  
-    border: none;
-    outline: none;
-    color: white;
-    padding: 14px 16px;
-    background-color: inherit;
-    font-family: inherit;
-    margin-top: 0;
-  }
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    
-  }
-  
-  .dropdown-content a {
-    float: none;
-    color: black;
-    padding: 0px 0px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-    min-width: auto;
-  }
-  
-  .dropdown-content a:hover {
-    background-color: #ddd;
-  }
-  
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 0px 0px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  min-width: auto;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
 section {
   min-height: 80vh;
 }
@@ -111,25 +111,15 @@ section#home {
 
 }
 
-/* section#about-me{
-  background: rgb(123,211,232);
-  background: linear-gradient(135deg, rgba(123,211,232,1) 0%, rgba(123,211,232,1) 0%, rgba(50,171,255,1) 100%);
-  color: #0f2852;
-} */
 section#about-me{
     background: rgb(255, 255, 255);
 
 }
-/* section#my-skills {
-  background: rgb(123,211,232);
-  background: linear-gradient(135deg, rgba(123,211,232,1) 0%, rgba(232,123,165,1) 0%, rgba(255,50,50,1) 100%);
-  color: #40081a;
-} */
 section#my-skills {
-    background: -webkit-linear-gradient(to top, #2980b9, #6dd5fa, #ffffff); 
-    background: linear-gradient(to top, #2980b9, #6dd5fa, #ffffff); 
-   
-  }
+  background: -webkit-linear-gradient(to top, #2980b9, #6dd5fa, #ffffff); 
+  background: linear-gradient(to top, #2980b9, #6dd5fa, #ffffff); 
+  
+}
 
 
 section#project {
@@ -137,27 +127,25 @@ section#project {
   
 }
 section#volunteer {
-    background: #ffffff; 
+  background: #ffffff; 
 }
 section#contact-me {
-    padding: 20px;
-    margin: 0px auto;
-    min-height: 100vh;
-    background-color: #0000008e;
-    
-    color: #ffffff;
+  padding: 20px;
+  margin: 0px auto;
+  min-height: 100vh;
+  background-color: #0000008e;
+  
+  color: #ffffff;
 }
 #project-container{
     
-    margin: auto;
-    width: 100%;
-    border: 5px solid #ffffff;
-    padding-top: 10px;
-    padding-right: 50px;
-    padding-bottom: 10px;
-    padding-left: 50px;
-
-
+  margin: auto;
+  width: 100%;
+  border: 5px solid #ffffff;
+  padding-top: 10px;
+  padding-right: 50px;
+  padding-bottom: 10px;
+  padding-left: 50px;
 
 }
 article {
@@ -167,24 +155,24 @@ article {
   margin: 0px auto;
 }
 h1 {
-    font-size: 38px;
-    color: #222222;
-    font-family: 'Raleway', sans-serif;
-    font-weight: normal;
-    margin: 0px 0 25px 0;
-    text-align: center;
-    margin-top: 55px;
-  }
+  font-size: 38px;
+  color: #222222;
+  font-family: 'Raleway', sans-serif;
+  font-weight: normal;
+  margin: 0px 0 25px 0;
+  text-align: center;
+  margin-top: 55px;
+}
 h2 {
   text-align: center;
   padding: 40px 0px 0px 0px;
   font-size: 3em;
 }
 h3 {
-    text-align: center;
-    padding: 5px 0px 0px 0px;
-    font-size: 1.5em;
-  }
+  text-align: center;
+  padding: 5px 0px 0px 0px;
+  font-size: 1.5em;
+}
 p {
   font-size: 1.5em;
   text-align: center;
@@ -195,132 +183,130 @@ textarea{
 
 }
 
-/* style the container */
 .contact-me-container {
-    overflow: hidden;
-    margin-top: 100px;
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    padding: 100px 0 30px 0;
-  } 
+  overflow: hidden;
+  margin-top: 100px;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 100px 0 30px 0;
+} 
+
+input,
+.btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  margin: 5px 0;
+  opacity: 0.85;
+  display: inline-block;
+  font-size: 17px;
+  line-height: 20px;
+  text-decoration: none; /* remove underline from anchors */
+}
   
-  /* style inputs and link buttons */
-  input,
-  .btn {
-    width: 100%;
-    padding: 12px;
-    border: none;
-    border-radius: 4px;
-    margin: 5px 0;
-    opacity: 0.85;
-    display: inline-block;
-    font-size: 17px;
-    line-height: 20px;
-    text-decoration: none; /* remove underline from anchors */
-  }
-  
-  input:hover,
-  .btn:hover {
-    opacity: 1;
-  }
-  
-  /* add appropriate colors to fb, twitter and google buttons */
-  .fb {
-    background-color: #3B5998;
-    color: white;
-  }
-  
-  .wechat {
-    background-color: #55eea1c9;
-    color: white;
-  }
-  
-  .linkedin {
-    background-color: #367af8;
-    color: white;
-  }
-  .github {
-    background-color: #593fee;
-    color: white;
-  }
-  
-  /* style the submit button */
-  input[type=submit] {
-    background-color: #04AA6D;
-    color: white;
-    cursor: pointer;
-  }
-  
-  input[type=submit]:hover {
-    background-color: #45a049;
-  }
-  
-  /* Two-column layout */
+input:hover,
+.btn:hover {
+  opacity: 1;
+}
+
+/* add appropriate colors to fb, twitter and google buttons */
+.fb {
+  background-color: #3B5998;
+  color: white;
+}
+
+.wechat {
+  background-color: #55eea1c9;
+  color: white;
+}
+
+.linkedin {
+  background-color: #367af8;
+  color: white;
+}
+.github {
+  background-color: #593fee;
+  color: white;
+}
+
+/* style the submit button */
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Two-column layout */
+.col {
+  float: left;
+  width: 50%;
+  margin: auto;
+  padding: 0 50px;
+  margin-top: 100px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* vertical line */
+.vl {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  border: 2px solid #ddd;
+  height: 300px;
+  margin-top: 100px;
+}
+
+/* text inside the vertical line */
+.vl-innertext {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #383131;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  padding: 8px 10px;
+}
+
+/* hide some text on medium and large screens */
+.hide-md-lg {
+  display: none;
+}
+
+/* bottom container */
+.bottom-container {
+    margin-top: 10px;
+  text-align: center;
+  background-color: #666;
+  border-radius: 0px 0px 4px 4px;
+}
+
+/* Responsive layout - when the screen is less than 650px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 650px) {
   .col {
-    float: left;
-    width: 50%;
-    margin: auto;
-    padding: 0 50px;
-    margin-top: 100px;
+    width: 100%;
+    margin-top: 0;
   }
-  
-  /* Clear floats after the columns */
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  
-  /* vertical line */
+  /* hide the vertical line */
   .vl {
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%);
-    border: 2px solid #ddd;
-    height: 300px;
-    margin-top: 100px;
-  }
-  
-  /* text inside the vertical line */
-  .vl-innertext {
-    position: absolute;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #383131;
-    border: 1px solid #ccc;
-    border-radius: 50%;
-    padding: 8px 10px;
-  }
-  
-  /* hide some text on medium and large screens */
-  .hide-md-lg {
     display: none;
   }
-  
-  /* bottom container */
-  .bottom-container {
-      margin-top: 10px;
+  /* show the hidden text on small screens */
+  .hide-md-lg {
+    display: block;
     text-align: center;
-    background-color: #666;
-    border-radius: 0px 0px 4px 4px;
   }
-  
-  /* Responsive layout - when the screen is less than 650px wide, make the two columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 650px) {
-    .col {
-      width: 100%;
-      margin-top: 0;
-    }
-    /* hide the vertical line */
-    .vl {
-      display: none;
-    }
-    /* show the hidden text on small screens */
-    .hide-md-lg {
-      display: block;
-      text-align: center;
-    }
-  }
+}
 
 @media
 (prefers-reduced-motion: no-preference) {

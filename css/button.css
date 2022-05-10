@@ -1,36 +1,11 @@
+/*
+Reference:https://webdeasy.de/en/top-css-buttons-en/
+#40 CSS Button Animations
+Author: Alex Loomer;
+*/
+
 @import url('https://fonts.googleapis.com/css?family=Raleway:300,400');
 
-/*
-<div class="more-button" id="button-2">
-        <div id="slide"></div>
-        <a href="#">Let's Go!</a>
-      </div>
-    
-      <div class="more-button" id="button-3">
-        <div id="circle"></div>
-        <a href="#">Let's Go!</a>
-      </div>
-    
-      <div class="more-button" id="button-4">
-        <div id="underline"></div>
-        <a href="#">Let's Go!</a>
-      </div>
-    
-      <div class="more-button" id="button-5">
-        <div id="translate"></div>
-        <a href="#">Let's Go!</a>
-      </div>
-    
-      <div class="more-button" id="button-6">
-        <div id="spin"></div>
-        <a href="#">Let's Go!</a>
-      </div>
-    
-      <div class="more-button" id="button-7">
-        <div id="dub-arrow"><img src="https://github.com/atloomer/atloomer.github.io/blob/master/img/iconmonstr-arrow-48-240.png?raw=true" alt="" /></div>
-        <a href="#">Let's Go!</a>
-      </div>
-*/
 
 
 
