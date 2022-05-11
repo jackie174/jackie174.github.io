@@ -8,7 +8,8 @@ Date: April 21, 2015
 
 @import url(https://fonts.googleapis.com/css?family=opensans:500);
 body{
-    color:rgb(44, 124, 243);
+    background-color: rgba(52, 174, 255, 0.548);
+    color:rgb(98, 160, 252);
     font-family: 'Open Sans', sans-serif;
     height:auto;
     overflow: hidden;
@@ -21,9 +22,10 @@ body{
     margin:100px auto;
 }
 ._404{
+    display:block;
+    position:relative;
     font-size: 220px;
     position: center;
-    display: inline-block;
     z-index: 10000;
     height: 250px;
     letter-spacing: 15px;
@@ -91,15 +93,6 @@ hr{
     
 }
 
-hr:after {
-    content: "\2022";
-    display: inline-block;
-    position: relative;
-    top: -0.75em;
-    font-size: 2em;
-    padding: 0 0.2em;
-    background: #278ff0;
-}
 
 .cloud {
     width: 350px; height: 120px;
@@ -175,11 +168,23 @@ hr:after {
     -webkit-transform: scale(0.6);
     -moz-transform: scale(0.6);
     transform: scale(0.6);
-    opacity: 0.6; 
+    opacity: 0.7; 
     -webkit-animation: moveclouds 25s linear infinite;
     -moz-animation: moveclouds 25s linear infinite;
     -o-animation: moveclouds 25s linear infinite;
     
+}
+.x22 {
+    left: 200px; top: 30px;
+
+    -webkit-transform: scale(0.5);
+    -moz-transform: scale(0.5);
+    transform: scale(0.5);
+    opacity: 0.8; 
+
+    -webkit-animation: moveclouds 20s linear infinite;
+    -moz-animation: moveclouds 20s linear infinite;
+    -o-animation: moveclouds 20s linear infinite;
 }
 
 .x3 {
