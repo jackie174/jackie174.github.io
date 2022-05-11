@@ -116,9 +116,10 @@ section#about-me{
 
 }
 section#my-skills {
-  background: -webkit-linear-gradient(to top, #2980b9, #6dd5fa, #ffffff); 
-  background: linear-gradient(to top, #2980b9, #6dd5fa, #ffffff); 
   
+  background: #008aff; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #0088ff6e, #ffffff); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #0088ffa9, #ffffff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 
