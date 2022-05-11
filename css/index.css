@@ -14,9 +14,17 @@ body {
   width:80px;
   height:80px; 
   border-radius: 50%;
-  margin-left: 50%;
+  align-items: center;
+  margin-left: 40%;
   margin-right: 50%;
   margin-top: 100px;
+  transition: width 5s height 6s transform 3s ease-in-out;
+}
+
+.img-center:hover {
+  width: 200px;
+  height: 200px;
+  transform: rotateZ(360deg) translateX(-50px);
 }
 @keyframes slidein {
   from {
@@ -37,7 +45,7 @@ body {
   height: 45px;
   z-index: 100;
   min-width: 555px;
-  animation: slidein 3s ease-in-out;
+  animation: slidein 2s ease-in-out;
 }
 
 nav a {
@@ -116,18 +124,18 @@ section#home {
     background-repeat: no-repeat;
     background-attachment: fixed; 
     background-size: 100% 100%;
-    animation: slidein 3s ease-in-out;
+    animation: slidein 2s ease-in-out;
 
 
 }
 
 section#about-me{
     background: rgb(255, 255, 255);
-    animation: slidein 3s ease-in-out;
+    animation: slidein 2s ease-in-out;
 
 }
 section#my-skills {
-  animation: slidein 3s ease-in-out;
+  animation: slidein 2s ease-in-out;
   
   background: #008aff; /* fallback for old browsers */
   background: -webkit-linear-gradient(to top, #0088ff6e, #ffffff); /* Chrome 10-25, Safari 5.1-6 */
@@ -172,11 +180,8 @@ h1 {
   color: #222222;
   font-family: 'Raleway', sans-serif;
   font-weight: normal;
-  margin: 0px 0 25px 0;
   text-align: center;
   margin-top: 55px;
-  position: relative;
-  animation: imgcenter 2s ease;
 }
 h2 {
   text-align: center;
