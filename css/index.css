@@ -14,19 +14,18 @@ body {
   width:80px;
   height:80px; 
   border-radius: 50%;
-  position: relative;
   margin-left: 50%;
   margin-right: 50%;
   margin-top: 100px;
-  animation: imgcenter 3s ease;
 }
-@keyframes imgcenter {
-  from {top: -200px;}
-  to {top: 0px;}
-}
-@keyframes mainnav {
-  from {top: -1000px;}
-  to {top: 0px;}
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+  }
+
+  to {
+    margin-left: 0%;
+  }
 }
 #main-nav {
   background-color: #1e1e1e;
@@ -38,7 +37,7 @@ body {
   height: 45px;
   z-index: 100;
   min-width: 555px;
-  animation: mainnav 3s ease;
+  animation: slidein 3s ease-in-out;
 }
 
 nav a {
@@ -117,17 +116,18 @@ section#home {
     background-repeat: no-repeat;
     background-attachment: fixed; 
     background-size: 100% 100%;
-    position: relative;
-    animation: imgcenter 2s ease;
+    animation: slidein 3s ease-in-out;
 
 
 }
 
 section#about-me{
     background: rgb(255, 255, 255);
+    animation: slidein 3s ease-in-out;
 
 }
 section#my-skills {
+  animation: slidein 3s ease-in-out;
   
   background: #008aff; /* fallback for old browsers */
   background: -webkit-linear-gradient(to top, #0088ff6e, #ffffff); /* Chrome 10-25, Safari 5.1-6 */
