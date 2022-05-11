@@ -11,14 +11,19 @@ body {
 }
 
 .img-center {
+  width:80px;
+  height:80px; 
   border-radius: 50%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  position: relative;
+  margin-left: 50%;
+  margin-right: 50%;
   margin-top: 100px;
-  width: 50%;
+  animation: imgcenter 2s ease;
 }
-
+@keyframes imgcenter {
+  from {top: -200px;}
+  to {top: 0px;}
+}
 #main-nav {
   background-color: #1e1e1e;
   padding: 10px;
@@ -29,6 +34,7 @@ body {
   height: 45px;
   z-index: 100;
   min-width: 555px;
+  animation: imgcenter 2s ease;
 }
 
 nav a {
@@ -107,6 +113,8 @@ section#home {
     background-repeat: no-repeat;
     background-attachment: fixed; 
     background-size: 100% 100%;
+    position: relative;
+    animation: imgcenter 2s ease;
 
 
 }
@@ -163,6 +171,8 @@ h1 {
   margin: 0px 0 25px 0;
   text-align: center;
   margin-top: 55px;
+  position: relative;
+  animation: imgcenter 2s ease;
 }
 h2 {
   text-align: center;
