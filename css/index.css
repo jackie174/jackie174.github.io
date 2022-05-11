@@ -18,10 +18,14 @@ body {
   margin-left: 50%;
   margin-right: 50%;
   margin-top: 100px;
-  animation: imgcenter 2s ease;
+  animation: imgcenter 3s ease;
 }
 @keyframes imgcenter {
   from {top: -200px;}
+  to {top: 0px;}
+}
+@keyframes mainnav {
+  from {top: -1000px;}
   to {top: 0px;}
 }
 #main-nav {
@@ -34,7 +38,7 @@ body {
   height: 45px;
   z-index: 100;
   min-width: 555px;
-  animation: imgcenter 2s ease;
+  animation: mainnav 3s ease;
 }
 
 nav a {
