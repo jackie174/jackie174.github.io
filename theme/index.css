@@ -19,14 +19,14 @@ body {
 	margin-left: 40%;
 	margin-right: 50%;
 	margin-top: 100px;
-	transition: width 5s height 6s transform 3s ease-in-out;
+	/* transition: width 5s height 6s transform 3s ease-in-out; */
 }
 
-.img-center:hover {
+/* .img-center:hover {
 	width: 200px;
 	height: 200px;
-	transform: rotateZ(360deg) translateX(-50px);
-}
+ transform: rotateZ(360deg) translateX(-50px); 
+} */
 
 @keyframes slidein {
 	from {
