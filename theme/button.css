@@ -7,8 +7,20 @@ Author: Alex Loomer;
 @import url('https://fonts.googleapis.com/css?family=Raleway:300,400');
 
 
+a::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  margin-left: 10px; /* add some space between the icon and the text */
 
+}
+a::after {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  margin-right: 10px; /* add some space between the icon and the text */
 
+}
 /* Button Styles */
 
 .more-button {
