@@ -11,7 +11,6 @@ window.addEventListener("scroll", e => {
         home.classList.add('navbarOffsetMargin');
     } else {
         navbar.classList.remove('sticky');
-        navbar.classList.remove('fixed');
         home.classList.remove('navbarOffsetMargin');
     }
     navbarLinks.forEach(link => {
