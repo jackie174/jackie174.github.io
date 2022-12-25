@@ -48,7 +48,9 @@ body {
 	height: 45px;
 	z-index: 100;
 	min-width: 555px;
-	animation: slidein 2s ease-in-out;
+	animation-name: fadeInOut, moveLeft300px, bounce;
+	animation-duration: 2.5s, 5s, 1s;
+	animation-iteration-count: 1;
 }
 
 nav a {
@@ -124,11 +126,10 @@ section {
 }
 
 section#home {
-	background-image: url('../img/duotone.png');
+	background-image: url('../img/duotone1.png');
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: 100% 100%;
-	animation: slidein 2s ease-in-out;
 }
 
 section#about-me {

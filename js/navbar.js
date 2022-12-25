@@ -6,7 +6,7 @@ let navbarLinks = links_array.splice(0, 5);
 window.addEventListener("scroll", e => {
   
     let scrollPos = window.scrollY;
-    if (scrollPos+100 > navPos) {
+    if (scrollPos> navPos) {
         navbar.classList.add('sticky');
         home.classList.add('navbarOffsetMargin');
     } else {
@@ -16,7 +16,7 @@ window.addEventListener("scroll", e => {
     }
     navbarLinks.forEach(link => {
         let section = document.querySelector(link.hash);
-        if (scrollPos + 100 > section.offsetTop && scrollPos + 100 < section.offsetTop + section.offsetHeight ) {
+        if (scrollPos > section.offsetTop && scrollPos < section.offsetTop + section.offsetHeight ) {
         link.classList.add("active");
         } else {
         link.classList.remove("active");
