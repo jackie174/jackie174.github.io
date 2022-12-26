@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Poppins:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Caveat&family=Poppins:wght@300&display=swap");
 
 body {
-	font-family: poppins, sans-serif;
+	font-family: sans-serif, 'Comic Sans MS', 'Cursive';
 	margin: 0px;
-	min-width: 650px;
+	min-width: 680px;
 	min-height: 500px;
 }
 
@@ -12,21 +12,15 @@ body {
 }
 
 .img-center {
-	width: 80px;
-	height: 80px;
+	width: 100px;
+	height: 100px;
 	border-radius: 50%;
 	align-items: center;
 	margin-left: 40%;
 	margin-right: 50%;
 	margin-top: 100px;
-	/* transition: width 5s height 6s transform 3s ease-in-out; */
+	animation: fade 1s;
 }
-
-/* .img-center:hover {
-	width: 200px;
-	height: 200px;
- transform: rotateZ(360deg) translateX(-50px); 
-} */
 
 @keyframes slidein {
 	from {
@@ -46,17 +40,24 @@ body {
 	position: relative;
 	height: 45px;
 	z-index: 100;
-	min-width: 555px;
+	min-width: 680px;
 	animation-name: fadeInOut, moveLeft100px, bounce;
 	animation-duration: 1s, 1s, 1s;
 	animation-iteration-count: 1;
 	border-radius: 5px;
 	box-shadow: #008aff;
 }
+
 @keyframes fadeInOut {
-    from { opacity: 0; }
-    to { opacity: 1; }
-  }
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
 nav a {
 	color: white;
 	text-decoration: none;
@@ -69,7 +70,6 @@ nav a {
 	top: 0;
 }
 
-
 nav a.active {
 	color: #1e1e1e;
 	background: white;
@@ -81,9 +81,8 @@ nav a:hover {
 }
 
 .dropdown {
-	margin-top: -15px;
-	float: left;
-	overflow: hidden;
+
+	float: right;
 }
 
 .dropdown .dropbtn {
@@ -91,36 +90,13 @@ nav a:hover {
 	border: none;
 	outline: none;
 	color: white;
-	padding: 14px 16px;
+	padding: 12px 12px;
 	background-color: inherit;
-	font-family: inherit;
-	margin-top: 0;
 }
 
-.dropdown-content {
-	display: none;
-	position: absolute;
-	background-color: #f9f9f9;
-	min-width: 160px;
-	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-}
-
-.dropdown-content a {
-	float: none;
-	color: black;
-	padding: 0px 0px;
-	text-decoration: none;
-	display: block;
-	text-align: left;
-	min-width: auto;
-}
-
-.dropdown-content a:hover {
-	background-color: #ddd;
-}
-
-.dropdown:hover .dropdown-content {
-	display: block;
+.dropdown .dropbtn:hover {
+	color: rgb(0, 0, 0);
+	background-color: rgb(255, 255, 255);
 }
 
 section {
@@ -128,7 +104,7 @@ section {
 }
 
 section#home {
-	background-image: url('../img/duotone1.png');
+	background-image: url("../img/duotone1.png");
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: 100% 100%;
@@ -183,9 +159,9 @@ article {
 }
 
 h1 {
-	font-size: 38px;
+	font-size: 45px;
 	color: #222222;
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Comic Sans MS', 'Cursive';
 	font-weight: normal;
 	text-align: center;
 	margin-top: 55px;
@@ -243,7 +219,7 @@ input:hover,
 
 /* add appropriate colors to fb, twitter and google buttons */
 .fb {
-	background-color: #3B5998;
+	background-color: #3b5998;
 	color: white;
 }
 
@@ -263,13 +239,13 @@ input:hover,
 }
 
 /* style the submit button */
-input[type=submit] {
-	background-color: #04AA6D;
+input[type="submit"] {
+	background-color: #04aa6d;
 	color: white;
 	cursor: pointer;
 }
 
-input[type=submit]:hover {
+input[type="submit"]:hover {
 	background-color: #45a049;
 }
 
@@ -375,8 +351,17 @@ input[type=submit]:hover {
 }
 
 .send-button:before {
-	content: '';
-	background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+	content: "";
+	background: linear-gradient(45deg,
+			#ff0000,
+			#ff7300,
+			#fffb00,
+			#48ff00,
+			#00ffd5,
+			#002bff,
+			#7a00ff,
+			#ff00c8,
+			#ff0000);
 	position: absolute;
 	top: -2px;
 	left: -2px;
@@ -387,12 +372,12 @@ input[type=submit]:hover {
 	height: calc(100% + 4px);
 	animation: glowing 20s linear infinite;
 	opacity: 0;
-	transition: opacity .3s ease-in-out;
+	transition: opacity 0.3s ease-in-out;
 	border-radius: 10px;
 }
 
 .send-button:active {
-	color: #000
+	color: #000;
 }
 
 .send-button:active:after {
@@ -405,7 +390,7 @@ input[type=submit]:hover {
 
 .send-button:after {
 	z-index: -1;
-	content: '';
+	content: "";
 	position: absolute;
 	width: 100%;
 	height: 100%;

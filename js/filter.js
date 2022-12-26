@@ -1,4 +1,4 @@
-filterSelection("all")
+filterSelection("all");
 function filterSelection(c) {
   var x, i;
   x = document.getElementsByClassName("filterDiv");
@@ -14,8 +14,9 @@ function w3AddClass(element, name) {
   arr1 = element.className.split(" ");
   arr2 = name.split(" ");
   for (i = 0; i < arr2.length; i++) {
-    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
-    
+    if (arr1.indexOf(arr2[i]) == -1) {
+      element.className += " " + arr2[i];
+    }
   }
 }
 
@@ -25,7 +26,7 @@ function w3RemoveClass(element, name) {
   arr2 = name.split(" ");
   for (i = 0; i < arr2.length; i++) {
     while (arr1.indexOf(arr2[i]) > -1) {
-      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+      arr1.splice(arr1.indexOf(arr2[i]), 1);
     }
   }
   element.className = arr1.join(" ");
@@ -33,13 +34,20 @@ function w3RemoveClass(element, name) {
 
 var btnContainer = document.getElementById("myBtnContainer");
 var btns = btnContainer.getElementsByClassName("filter-btn");
+
+var proj_img = document.querySelectorAll(".one_box");
 for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function(){
+  btns[i].addEventListener("click", function () {
     var current = document.getElementsByClassName("filter-btn active");
-    current[0].className = current[0].className.replace("filter-btn active", "filter-btn");
+    current[0].className = current[0].className.replace(
+      "filter-btn active",
+      "filter-btn"
+    );
     this.className = "filter-btn active";
 
-    
-    
+    // fade image in one_box when cleck fiter button every time
+    proj_img.forEach((img) => {
+      img.style.animation = "fade 1s";
+    });
   });
 }

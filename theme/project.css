@@ -2,24 +2,22 @@
   border: 1px solid #ccc;
   position: relative;
   min-height: 200px;
-  animation: fade 1s;
-
-
 }
+
 @keyframes fade {
-    0% {
-      opacity: 0;
-    }
-    25% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 
 }
+
 .gallery:hover {
   border: 1px solid inherit;
+
 }
 
 .carousel-warp {
@@ -30,6 +28,7 @@
   height: 100%;
   flex: 1;
 }
+
 .one_box {
   position: absolute;
   width: 100%;
@@ -126,9 +125,11 @@ div.gallery:hover .image {
 div.gallery:hover .middle {
   opacity: 1;
 }
+
 div.gallery:hover .text {
-  animation: grow 2s;
+  animation: grow 1s;
 }
+
 .text {
   background-color: transparent;
   color: #439bffcc;
@@ -137,6 +138,7 @@ div.gallery:hover .text {
   font-family: 'Cursive', 'Comic Sans MS', sans-serif;
 
 }
+
 @keyframes grow {
   0% {
     font-size: 30px;
@@ -146,6 +148,7 @@ div.gallery:hover .text {
     font-size: 60px;
   }
 }
+
 .responsive {
   padding: 0 6px;
   float: left;
