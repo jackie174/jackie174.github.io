@@ -106,6 +106,14 @@
   transition: 1s ease;
   backface-visibility: hidden;
 }
+.image_thin {
+  opacity: 1;
+  display: block;
+  width: 45%;
+  height: 100%;
+  transition: 1s ease;
+  backface-visibility: hidden;
+}
 
 
 .middle {
