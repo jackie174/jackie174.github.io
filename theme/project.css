@@ -125,11 +125,13 @@
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%)
 }
-
+/* Use opacity to blur the image when the mouse move to image */
 div.gallery:hover .image {
   opacity: 0.3;
 }
-
+div.gallery:hover .image_thin {
+  opacity: 0.3;
+}
 div.gallery:hover .middle {
   opacity: 1;
 }
