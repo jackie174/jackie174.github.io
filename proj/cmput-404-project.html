@@ -1,21 +1,156 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-  <title>peng cheng - Cmput 404 project</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+  <link href="../theme/project.css" rel="stylesheet" />
+  <title>peng cheng- Cmput 404 Project</title>
   <meta charset="utf-8" />
   <meta name="generator" content="Pelican" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="shortcut icon" type="image/x-icon" href="../theme/favicon.ico" />
-  <link href="../theme/animate.css" rel="stylesheet" />
-  <link href="../theme/index.css" rel="stylesheet" />
-  <link href="../theme/filter.css" rel="stylesheet" />
-  <link href="../theme/project.css" rel="stylesheet" />
-  <link href="../theme/button.css" rel="stylesheet" />
+  <style>
+    body {
+      font-family: "Times New Roman", Georgia, Serif;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: "Playfair Display";
+      letter-spacing: 5px;
+    }
+
+    .w3-image {
+      display: block;
+    }
+
+    .video {
+      display: block;
+      margin: 0 auto;
+    }
+
+    table,
+    th,
+    td {
+      border: 1px solid black;
+    }
+  </style>
 </head>
 
 <body>
-  <p>cmput-404-project</p>
+  <!-- Navbar (sit on top) -->
+  <div class="w3-top">
+    <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing: 4px">
+      <a href="#home" class="w3-bar-item w3-button">Cmput 404 Project</a>
+      <!-- Right-sided navbar links. Hide them on small screens -->
+      <div class="w3-right w3-hide-small">
+        <a href="#about" class="w3-bar-item w3-button">About</a>
+        <a href="#Overview" class="w3-bar-item w3-button">Overview</a>
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+
+  <!-- Header -->
+  <header class="w3-display-container w3-content w3-wide" style="max-width: auto; min-width: 500px" id="home">
+    <img class="w3-image" src="../img/socialdistribution_banner.png" alt="Hamburger Catering" width=max height=auto
+      style="display: block;margin:20px 0" />
+  </header>
+
+
+  <!-- Page content -->
+  <div class="w3-content" style="max-width: 1100px">
+    <!-- About Section -->
+    <div class="w3-row w3-padding-64" id="about">
+      <div class="w3-col m6 w3-padding-large w3-hide-small" style="margin-top: 200px;">
+
+        <br>
+        <br>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/ooGCXph3O64" title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
+
+      <div class="w3-col m6 w3-padding-large">
+        <h1 class="w3-center">About Social Distribution</h1>
+        <br />
+        <h5 class="w3-center">Cmput 404 Team</h5>
+        <p class="w3-large">
+
+          <span class="w3-tag w3-light-grey">Social Distribution </span>
+          is a website contain frontend and backend. we use Django as backend, and react as frontend. 
+        </p>
+
+
+      </div>
+    </div>
+
+    <hr />
+
+    <!-- Menu Section -->
+    <div class="w3-row w3-padding-64" id="Overview">
+      <div class="w3-col l6 w3-padding-large">
+        <h1 class="w3-center">Our Contribute</h1>
+        <br />
+        <h4>Deploy the website</h4>
+        <h4>Create particapant page</h4>
+        <br />
+        <h4>Create Admin page</h4>
+        <br />
+      </div>
+
+      <div class="w3-col l6 w3-padding-large">
+
+        <div class="gallery">
+          <div class="carousel-warp">
+            <div class="box">
+              <img loading="lazy" class="image"
+                src="https://cdn.discordapp.com/attachments/953573548063064108/1056530713647779920/image.png"
+                alt="Cinque Terre" width="max" height="auto" />
+            </div>
+            <div class="box">
+              <img loading="lazy" class="image"
+                src="https://cdn.discordapp.com/attachments/953573548063064108/1056533022247243796/image.png"
+                alt="Cinque Terre" width="max" height="auto" />
+            </div>
+            <div class="box">
+              <img loading="lazy" class="image"
+                src="https://cdn.discordapp.com/attachments/953573548063064108/1056533365911724042/image.png"
+                alt="Cinque Terre" width="max" height="auto" />
+            </div>
+            <div class="box">
+              <img loading="lazy" class="image"
+                src="https://cdn.discordapp.com/attachments/953573548063064108/1056533624041775164/image.png"
+                alt="Cinque Terre" width="max" height="auto" />
+            </div>
+
+
+          </div>
+
+        </div>
+      </div>
+
+
+      <!-- End page content -->
+    </div>
+
+
+    <!-- Footer -->
+    <footer class="w3-center w3-light-grey w3-padding-15">
+      <p>
+        Powered by
+        <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank"
+          class="w3-hover-text-green">w3.css</a>
+      </p>
+    </footer>
 </body>
 
 </html>

@@ -62,23 +62,26 @@ a#button-1 {
 /* First Button */
 
 #arrow-hover {
-  width: 50px;
-  height: 30px;
+  width: 45px;
+  height: 25px;
   position: absolute;
-  transform: translateX(100px);
+  transform: translateX(200px);
   opacity: 0;
   -webkit-transition: all .25s cubic-bezier(.14, .59, 1, 1.01);
   transition: all .15s cubic-bezier(.14, .59, 1, 1.01);
-  margin: 0;
-  padding: 0 5px;
+
+
 }
 
+a#button-1:hover i {
+  opacity: 1;
+  padding-top: 8px;
+  transform: translateX(100px);
+}
 a#button-1:hover img {
-  width: 50px;
   opacity: 1;
   transform: translateX(100px);
 }
-
 
 
 /* Second Button */
