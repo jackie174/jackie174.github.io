@@ -1,6 +1,6 @@
 The home page based on CSS and HTML.  
 The project pages are based on Bootstrap.  
-I also use JS to write soem animation.  
+I also use JS to write some animation.  
 
 
 
