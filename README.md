@@ -1,6 +1,4 @@
-![image](https://user-images.githubusercontent.com/57372321/212818934-6908899e-bb76-4f75-84d3-ac6a3c39d367.png)
-
-
+![image](https://user-images.githubusercontent.com/57372321/212819013-1594e692-7959-4898-910f-d024044fef02.png)
 
 The home page based on CSS and HTML.  
 The project pages are based on Bootstrap.  
