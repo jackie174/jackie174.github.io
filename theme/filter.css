@@ -1,0 +1,47 @@
+.filterDiv {
+  color: #000000;
+  width: auto;
+  line-height: auto;
+  margin: 2px;
+  display: none;
+}
+
+.filter-show {
+  display: block;
+}
+
+.filter-container {
+  margin-top: 20px;
+}
+
+#myBtnContainer {
+  position: static;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+
+.filter-btn {
+  padding-top: 5px;
+  padding-right: 15px;
+  padding-bottom: 5px;
+  padding-left: 15;
+  background-color: #ffffff;
+  cursor: pointer;
+  min-width: 100px;
+  margin-right: 10px;
+  margin-left: 10px;
+  border-radius: 8px;
+}
+
+.filter-btn:hover {
+  background-color: rgba(59, 148, 250, 0.719);
+  box-shadow: 0 12px 16px 0 rgba(40, 117, 233, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.filter-btn.active {
+  background-color: rgb(59, 148, 250);
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  color: white;
+}

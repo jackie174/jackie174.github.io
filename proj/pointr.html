@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <title>peng cheng- Modified PoinTr</title>
+    <meta charset="utf-8" />
+    <meta name="generator" content="Pelican" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" type="image/x-icon" href="../theme/favicon.ico" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            font-family: "Times New Roman", Georgia, Serif;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: "Playfair Display";
+            letter-spacing: 5px;
+        }
+
+        .w3-image {
+            display: block;
+            margin: 0 auto;
+        }
+
+        .video {
+            display: block;
+            margin: 0 auto;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+        <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing: 4px">
+            <a href="#home" class="w3-bar-item w3-button">Modified PoinTr</a>
+            <div class="w3-left ">
+
+                <a href="https://github.com/Cmput-414/PoinTr" target="_blank"
+                  class="w3-button">
+                  <i class="fa fa-github fa-fw"></i></a>
+        
+              </div>
+            <!-- Right-sided navbar links. Hide them on small screens -->
+            <div class="w3-right w3-hide-small">
+                <a href="#about" class="w3-bar-item w3-button">About</a>
+                <a href="#Overview" class="w3-bar-item w3-button">Overview</a>
+            </div>
+        </div>
+    </div>
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <!-- Header -->
+    <header class="w3-display-container w3-content w3-wide" style="max-width: 1600px; min-width: 500px" id="home">
+        <img class="w3-image" src="../img/poinTr.png" alt="PoinTr process " width="max" height="auto" />
+    </header>
+    <hr />
+
+    <!-- Page content -->
+    <div class="w3-content" style="max-width: 1100px">
+        <!-- About Section -->
+        <div class="w3-row w3-padding-64" id="about">
+            <div class="w3-col m6 w3-padding-large w3-hide-small" style="margin-top: 200px">
+                <img src="../img/pointr1.png" class="w3-round w3-image w3-opacity-min" alt="Train result1" width="600"
+                    height="750" />
+                <br />
+                <br />
+                <img src="../img/pointr2.png" class="w3-round w3-image w3-opacity-min" alt="Train result2" width="600"
+                    height="750" />
+            </div>
+
+            <div class="w3-col m6 w3-padding-large">
+                <h1 class="w3-center">About 3D Model Inpainting</h1>
+                <div class="w3-center">
+                    <img src="../svg/python-5.svg" width=auto height=20px />
+                    <img src="https://img.shields.io/badge/pytorch%201.4-ffffff?logo=pytorch" width=auto height=20px />
+                  </div>
+                <h5 class="w3-center">Peng Cheng, Shiqi Zhang</h5>
+                <p class="w3-large">
+                    3D shape completion is a technique to fill in missing or incomplete
+                    parts of a 3D shape or model. It is useful in various fields,
+                    including computer graphics, computer vision, and robotics. 3D shape
+                    completion can be used to improve the accuracy and realism of 3D
+                    models, which are often used in virtual and augmented reality
+                    applications, as well as in simulations and other types of
+                    interactive experiences. This paper proposes potential improvements
+                    in the 3D shape completion model by adding a network called
+                    <span class="w3-tag w3-light-grey">LBCNN</span>. LBCNN can be used
+                    to improve the performance of 3D shape completion in several ways.
+                    For example, LBCNN can be trained to recognize and classify 3D
+                    shapes based on their appearance, allowing them to identify and fill
+                    in missing parts of a shape accurately. In addition, LBCNN can be
+                    used to analyze and understand the underlying structure and geometry
+                    of a 3D shape, which can be useful for predicting how missing parts
+                    of the shape should be completed. Furthermore, we compare a few
+                    networks without LBCNN using KITTI and PCN datasets.
+                </p>
+
+                <p class="w3-large w3-text-grey w3-hide-medium">
+                    The result is not significantly increased, but it has improved the
+                    performance of 3D inpainting. We mainly test the KITTI data set and
+                    get a satisfactory result. More data sets and time must be tested to
+                    provide a more thorough analysis of our method. We need to find a
+                    way to reduce the data set, and we especially need to test the PCN
+                    data set. We also need to explore the Transformer to improve its
+                    performance.
+                </p>
+            </div>
+        </div>
+
+        <hr />
+
+        <!-- Menu Section -->
+        <div class="w3-row w3-padding-64" id="Overview">
+            <div class="w3-col l6 w3-padding-large">
+                <h1 class="w3-center">Our Contribute</h1>
+                <br />
+                <h4>Add a CNN</h4>
+                <p class="w3-text-grey">Increase performance of PoinTr</p>
+                <br />
+                <table style="width: 100%">
+                    <tr>
+                        <th>Method</th>
+                        <th>F-score</th>
+                        <th>CDL 1</th>
+                        <th>CDL 2</th>
+                    </tr>
+                    <tr>
+                        <td>PoinTr</td>
+                        <td>0.639</td>
+                        <td>9.757</td>
+                        <th>0.308</th>
+                    </tr>
+                    <tr>
+                        <td>Our</td>
+                        <td>0.642</td>
+                        <td>9.73</td>
+                        <th>0.305</th>
+                    </tr>
+                </table>
+                <p>
+                    We run the PoinTr 200 epoch and 50 batch size. We found the best
+                    checkpoint in the 192nd epoch.<br />
+                    We run our modified 100 epoch and 16 batch size. We find the best
+                    checkpoint in the 95th epoch.<br />
+                    Better qualitative results: Higher F-score, lower CDL1 and CDL2.
+                </p>
+
+                <h4>Write specific instructions</h4>
+                <p class="w3-text-grey">
+                    <a href="https://github.com/Cmput-414/PoinTr/blob/master/Project%20Implementation.ipynb">
+                        Click open !</a>
+                    A notebook to start code in Colab.
+                </p>
+                <br />
+
+                <h4>Code documentation</h4>
+                <a
+                    href="https://mermaid.live/view#pako:eNqNV9tu2zgQ_RVCT06hupEvSWpgF9jYu0Cx2a5Qqy-NC4OWKFuoLGopqq1b99_3DEld7LhBkweb5Mxw5syZ4fi7F8tEeDNvq3i5Y9FiVTD8_fG41Fzpjy9f_s7Yh8HK2_OsGJaHFY7faBbvRPyJZSnLirLGUu73vEhYVrGtzIot05JpBQ0mFdOi0kOjB3FNMubIZ3onChbzPGeqLtaF0IOrMzlo9sVo3ch5V9bRD4xcvIeHMFIIZX2MdlAvD3onC5ZmuYCHhSZ_2psY-XvJ4D0ZPEbk4pFF4ckmxLG3tHurwn5W9cZhF7LHlWc0CYNQyVhU1cr7aOXmOExE2rlgYiX8ZoyrbeWTk2m29S0-6y8q00L57DPP3XdSePHihQkurYtYZwgPwPOtsDp0bWmv9RmkAaMBblNneWKwARqq0mwjUqkEqyjHnWrnqgXVceFhaZYLYLzknwXjLv0lUq073BZG6ggEKGFbyTYcQmDCSdCt4z5LJFNAtPF45R3Z_TJy1paRMdes3TJ0y9AuH1wqRJGc5YL0gff9pTjbMJNMCQtidO8CHyHIvwgiv-O4yQ7xsSFRVsDqnpMmpYRvJGoAodR7gaiySqtsU2uR-KzkCviLnMQASyXYlwz52PNPvYylvEJyWYvkfGSCm4_hyztjtQ84G8SfSn3VSY8NN1E05ObQunHENqnPKfsGf7O93qPW88FPlQ1Oa7Jv4i2kZm9lYaxN-tZyyZOntpzbI8JwbhxedFi8ChsoOvnRyeU94HDhZPC-InB6JtiCa95C-tQKuXvB0rSxdEH7AnEW7PG-LZefEmURIMiurGx-Adlpt0lwZSX02gm6rmOA6_ZI97REDEdsoZryfWoGVWUWzZHjl-uTZxd00uagI9oiAHJxcO0a05NryGoNzmqp4t2w1lkObCE0JCgfwAGwFraJDUaZ5JXQtSpYxfdlTt2L9nMj2padvXbUXHsBDmdkA3cszc50x41uhX60NsVhasNqmyZFJGZcs-Er8bUUKtuLQldnZiaNmRM-Q4Jic2CdvBnkUMJAA6IZBI0cpVSgSdemIVB3pKvxrXtdOkU6O_Ni2nhxVqOQcdXvTPZdoeaeto3Janb9G-DaZkwVe8QyeHRsbZ7wosoS4UJMZd5PD6RNRTW6I-ee0bferVMl9-s43RpH3tlscaI9Cq-OqVYdmVhVijhLM-xsDi3DCr4X7X1Pa9D27uWvNu0l1aKVzqUs2Z-ljHcguX1AqBst4YiNtRlMqCHQTlsLS9u9luO2eTURQGWLD_QvnfGcDbIC4w7IrR1-VzNC9O83UfSGvoTzt53Rtr3CGNlCrnB-ZEtqp41FAtO9-f1qecaGuQxWpudWDI1ASGQnUbIsESbYl7lsZ1VM-fd-2vxCA3yIUooU--ek8J7CHhLsVrZllRlmvh6-DZxXhsX_1trsx5IrFLSp1HWcyxoPpBKWVmaz8nO-6b0QYWAffZNCLUoWzNh79KNwjiGrqOgRtkPRyQYBZMDAq0xx20IyFP2vFurgX3Cku9LSIBw3V45mULbd0z6_Z_JjKz9p5Mcz9hfqCcC_Fd1wFE6s2LQRm8xYWlbd-dSe3zTn01nTBPHBfhv8KnZX7Jn0YpBDenNZdePjM_l9oPwSocD-NSmdTKxwy2dbPdgq-IKi17srjKowIdUg5lpspTqcZJ8srG0Yvl2kWdF8necdFg826w9mjEClcQxwJz6bjmsqXVClM76lt3Y4HD4TemRCpwH-mYijJuKuc_cibjf7w_rVszM5NCCJKdy8olj15t-mQUUjd7llXjTuhdD90Gj-Pd8DxfFjLMFPtu90vvLwA4na6YwZ53mdI8ZV8QOivNZyeShib4YMCd-rS_QQscg4QNk3myUvvNl376s3m1wPryfTyTQIxnfTSXA79b2DN3t5GwxvR-NxcBdMpq9fX49--N43KaE_Gl7fXt_djKbj4OYmeH13OzbWPphDMv7jf_lbrek">
+                    Flowchart</a>
+                <br />
+                <a href="https://github.com/Cmput-414/PoinTr/blob/master/documentation.md">Documentation</a>
+                <p class="w3-text-grey">Click above link!</p>
+                <br />
+                <h4>Reference:</h4>
+                <p class="w3-text-grey">
+                    [1] Yu, X., Rao, Y., Wang, Z., Liu, Z., Lu, J., & Zhou, J. (2021).
+                    Pointr: Diverse point cloud completion with geometry-aware
+                    transformers. In Proceedings of the IEEE/CVF international
+                    conference on computer vision (pp. 12498-12507).
+                </p>
+            </div>
+
+            <div class="w3-col l6 w3-padding-large">
+                <iframe class="w3-round w3-image w3-opacity-min" alt="Menu" style="width: 100%; height: 500px"
+                    src="https://www.youtube.com/embed/8P8bPNIxAhs" title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <!-- End page content -->
+    </div>
+
+
+    <!-- Footer -->
+    <footer class="w3-center w3-light-grey w3-padding-32">
+        <p>
+            Powered by
+            <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank"
+                class="w3-hover-text-green">w3.css</a>
+        </p>
+    </footer>
+</body>
+
+</html>

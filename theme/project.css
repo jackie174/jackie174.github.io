@@ -1,0 +1,241 @@
+.gallery {
+  border: 1px solid #ccc;
+  position: relative;
+  min-height: 200px;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+
+}
+
+.gallery:hover {
+  border: 1px solid inherit;
+
+}
+
+.carousel-warp {
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  flex: 1;
+}
+
+.one_box {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  animation: box 25s infinite ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.box:nth-child(1) {
+  left: 0%;
+}
+
+.box:nth-child(2) {
+  left: 100%;
+}
+
+.box:nth-child(3) {
+  left: 200%;
+}
+
+
+
+@keyframes box {
+
+  0%,
+  10% {
+    margin-left: 0px;
+  }
+
+  15%,
+  25% {
+    margin-left: -100%;
+  }
+
+  30%,
+  45% {
+    margin-left: -200%;
+  }
+
+  50%,
+  60% {
+    margin-left: -200%;
+  }
+
+  65%,
+  75% {
+    margin-left: -100%;
+  }
+
+  80%,
+  100% {
+    margin-left: 0%;
+  }
+
+
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: 100%;
+  transition: 1s ease;
+  backface-visibility: hidden;
+}
+.image_thin {
+  opacity: 1;
+  display: block;
+  width: 45%;
+  height: 100%;
+  transition: 1s ease;
+  backface-visibility: hidden;
+}
+
+
+.middle {
+  transition: 1s ease;
+  opacity: 0;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+/* Use opacity to blur the image when the mouse move to image */
+div.gallery:hover .image {
+  opacity: 0.3;
+}
+div.gallery:hover .image_thin {
+  opacity: 0.3;
+}
+div.gallery:hover .middle {
+  opacity: 1;
+}
+
+div.gallery:hover .text {
+  animation: grow 1s;
+}
+
+.text {
+  background-color: transparent;
+  color: #439bffcc;
+  font-size: 60px;
+  text-align: center;
+  font-family: 'Cursive', 'Comic Sans MS', sans-serif;
+
+}
+
+@keyframes grow {
+  0% {
+    font-size: 30px;
+  }
+
+  100% {
+    font-size: 60px;
+  }
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 0;
+  transition: 2s width;
+
+}
+
+.responsive.open {
+  width: 24.99999%;
+  height: 100%
+}
+
+@media only screen and (min-width: 701px) {
+  .responsive {
+    width: 24.99999%;
+    margin: 6px 0;
+  }
+
+  .carousel-warp {
+    min-height: 250px;
+  }
+}
+
+@media only screen and (max-width: 1500px) {
+  .responsive {
+    width: 32.99999%;
+    margin: 6px 0;
+  }
+
+  .carousel-warp {
+    min-height: 250px;
+
+
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+
+  .carousel-warp {
+    min-height: 300px;
+
+
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+
+  .carousel-warp {
+    min-height: 250px;
+
+
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .responsive {
+    width: 100%;
+  }
+
+  .carousel-warp {
+    min-height: 330px;
+
+
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}

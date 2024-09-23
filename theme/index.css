@@ -1,0 +1,423 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat&family=Poppins:wght@300&display=swap");
+
+body {
+	font-family: sans-serif, 'Comic Sans MS', 'Cursive';
+	margin: 0px;
+	min-width: 680px;
+	min-height: 500px;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.img-center {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	align-items: center;
+	margin-left: 40%;
+	margin-right: 50%;
+	margin-top: 100px;
+	animation: fade 1s;
+}
+
+@keyframes slidein {
+	from {
+		margin-left: 100%;
+	}
+
+	to {
+		margin-left: 0%;
+	}
+}
+
+#main-nav {
+	background-color: #3385ff;
+	padding: 10px;
+	text-align: center;
+	width: 100%;
+	position: relative;
+	height: 45px;
+	z-index: 100;
+	min-width: 680px;
+	animation-name: fadeInOut, moveLeft100px, bounce;
+	animation-duration: 1s, 1s, 1s;
+	animation-iteration-count: 1;
+	border-radius: 5px;
+	box-shadow: #008aff;
+}
+
+@keyframes fadeInOut {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
+nav a {
+	color: white;
+	text-decoration: none;
+	text-justify: auto;
+	padding: 11px;
+}
+
+#main-nav.sticky {
+	position: fixed;
+	top: 0;
+}
+
+nav a.active {
+	color: #1e1e1e;
+	background: white;
+}
+
+nav a:hover {
+	text-decoration: underline;
+	background-color: #1672fce8;
+}
+
+.dropdown {
+
+	float: right;
+}
+
+.dropdown .dropbtn {
+	font-size: 16px;
+	border: none;
+	outline: none;
+	color: white;
+	padding: 12px 12px;
+	background-color: inherit;
+}
+
+.dropdown .dropbtn:hover {
+	color: rgb(0, 0, 0);
+	background-color: rgb(255, 255, 255);
+}
+
+section {
+	min-height: 80vh;
+}
+
+section#home {
+	background-image: url("../img/duotone1.png");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: 100% 100%;
+}
+
+section#about-me {
+	background: rgb(255, 255, 255);
+	/* animation: slidein 2s ease-in-out; */
+}
+
+section#my-skills {
+	/* animation: slidein 2s ease-in-out; */
+	background: #008aff;
+	/* fallback for old browsers */
+	background: -webkit-linear-gradient(to top, #0088ff6e, #ffffff);
+	/* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to top, #0088ffa9, #ffffff);
+	/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+section#project {
+	background-color: #ffffff;
+}
+
+section#volunteer {
+	background: #ffffff;
+}
+
+section#contact-me {
+	padding: 20px;
+	margin: 0px auto;
+	min-height: 100vh;
+	background-color: #0000008e;
+	color: #ffffff;
+}
+
+#project-container {
+	margin: auto;
+	width: 100%;
+	border: 5px solid #ffffff;
+	padding-top: 10px;
+	padding-right: 50px;
+	padding-bottom: 10px;
+	padding-left: 50px;
+}
+
+article {
+	width: 90%;
+	max-width: 600px;
+	padding: 20px;
+	margin: 0px auto;
+}
+
+h1 {
+	font-size: 45px;
+	color: #222222;
+	font-family: 'Comic Sans MS', 'Cursive';
+	font-weight: normal;
+	text-align: center;
+	margin-top: 55px;
+}
+
+h2 {
+	text-align: center;
+	padding: 40px 0px 0px 0px;
+	font-size: 3em;
+}
+
+h3 {
+	text-align: center;
+	padding: 5px 0px 0px 0px;
+	font-size: 1.5em;
+}
+
+p {
+	font-size: 1.5em;
+	text-align: center;
+}
+
+textarea {
+	min-height: 100px;
+	min-width: 100%;
+}
+
+.contact-me-container {
+	overflow: hidden;
+	margin-top: 100px;
+	border-radius: 5px;
+	background-color: #f2f2f2;
+	padding: 100px 0 30px 0;
+}
+
+input,
+.btn {
+	width: 100%;
+	padding: 12px;
+	border: none;
+	border-radius: 4px;
+	margin: 5px 0;
+	opacity: 0.85;
+	display: inline-block;
+	font-size: 17px;
+	line-height: 20px;
+	text-decoration: none;
+	/* remove underline from anchors */
+}
+
+input:hover,
+.btn:hover {
+	opacity: 1;
+}
+
+/* add appropriate colors to fb, twitter and google buttons */
+.fb {
+	background-color: #3b5998;
+	color: white;
+}
+
+.wechat {
+	background-color: #55eea1c9;
+	color: white;
+}
+
+.linkedin {
+	background-color: #367af8;
+	color: white;
+}
+
+.github {
+	background-color: #593fee;
+	color: white;
+}
+
+/* style the submit button */
+input[type="submit"] {
+	background-color: #04aa6d;
+	color: white;
+	cursor: pointer;
+}
+
+input[type="submit"]:hover {
+	background-color: #45a049;
+}
+
+/* Two-column layout */
+.col {
+	float: left;
+	width: 50%;
+	margin: auto;
+	padding: 0 50px;
+	margin-top: 100px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+/* vertical line */
+.vl {
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%);
+	border: 2px solid #ddd;
+	height: 300px;
+	margin-top: 100px;
+}
+
+/* text inside the vertical line */
+.vl-innertext {
+	position: absolute;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	background-color: #383131;
+	border: 1px solid #ccc;
+	border-radius: 50%;
+	padding: 8px 10px;
+}
+
+/* hide some text on medium and large screens */
+.hide-md-lg {
+	display: none;
+}
+
+/* bottom container */
+.bottom-container {
+	margin-top: 10px;
+	text-align: center;
+	background-color: #666;
+	border-radius: 0px 0px 4px 4px;
+}
+
+/* Responsive layout - when the screen is less than 650px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+	.col {
+		width: 100%;
+		margin-top: 0;
+	}
+
+	/* hide the vertical line */
+	.vl {
+		display: none;
+	}
+
+	/* show the hidden text on small screens */
+	.hide-md-lg {
+		display: block;
+		text-align: center;
+	}
+}
+
+@media (prefers-reduced-motion: no-preference) {
+	html {
+		scroll-behavior: smooth;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	body {
+		font-size: 14px;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	body {
+		font-size: 11px;
+	}
+}
+
+.send-button {
+	width: 220px;
+	margin-top: 15px;
+	height: 50px;
+	border: none;
+	outline: none;
+	color: #fff;
+	background: #111;
+	cursor: pointer;
+	position: relative;
+	z-index: 0;
+	border-radius: 10px;
+}
+
+.send-button:before {
+	content: "";
+	background: linear-gradient(45deg,
+			#ff0000,
+			#ff7300,
+			#fffb00,
+			#48ff00,
+			#00ffd5,
+			#002bff,
+			#7a00ff,
+			#ff00c8,
+			#ff0000);
+	position: absolute;
+	top: -2px;
+	left: -2px;
+	background-size: 400%;
+	z-index: -1;
+	filter: blur(5px);
+	width: calc(100% + 4px);
+	height: calc(100% + 4px);
+	animation: glowing 20s linear infinite;
+	opacity: 0;
+	transition: opacity 0.3s ease-in-out;
+	border-radius: 10px;
+}
+
+.send-button:active {
+	color: #000;
+}
+
+.send-button:active:after {
+	background: transparent;
+}
+
+.send-button:hover:before {
+	opacity: 1;
+}
+
+.send-button:after {
+	z-index: -1;
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: #111;
+	left: 0;
+	top: 0;
+	border-radius: 10px;
+}
+
+@keyframes glowing {
+	0% {
+		background-position: 0 0;
+	}
+
+	50% {
+		background-position: 400% 0;
+	}
+
+	100% {
+		background-position: 0 0;
+	}
+}
+
+footer {
+	display: flex;
+	justify-content: center;
+	padding: 5px;
+	background-color: #ffffff;
+	color: rgb(0, 0, 0);
+}

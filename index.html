@@ -1,0 +1,270 @@
+<!---
+The content on this website is licensed under a Creative Commons Attribution 4.0 International license
+-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>peng cheng</title>
+  <meta charset="utf-8" />
+  <meta name="generator" content="Pelican" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="shortcut icon" type="image/x-icon" href="theme/favicon.ico" />
+  <link href="theme/animate.css" rel="stylesheet" />
+  <link href="theme/index.css" rel="stylesheet" />
+  <link href="theme/filter.css" rel="stylesheet" />
+  <link href="theme/project.css" rel="stylesheet" />
+  <link href="theme/button.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+
+<body>
+  <section id="home">
+    <article>
+      <img src="img/peng cheng.jpg" alt="Computer Man" class="img-center" loading="lazy" />
+      <h1>Hello! I am Peng Cheng!</h1>
+    </article>
+  </section>
+  <nav id="main-nav" class="main-nav">
+    <a href="#home" class="active">Home</a>
+    <a href="#about-me">About Me</a>
+    <a href="#my-skills">My Skills</a>
+    <a href="#project">Project</a>
+    <a href="#contact-me">Contact Me</a>
+    <div class="dropdown">
+      <a class="dropbtn" href="./404page.html">Blog</a>
+    </div>
+  </nav>
+  <section id="about-me">
+    <article>
+      <h2>About Me</h2>
+      <p>
+        My nickname is Jackie Cheng. I am a student who is studying at the
+        University of Alberta. My major is Computing Science and I also enroll
+        in BSc Specialization Programs. I'm interested in web applications and
+        Android apps. I have also been volunteering for a whole year on the
+        Safe-walk in University of Alberta.
+      </p>
+    </article>
+  </section>
+  <section id="my-skills">
+    <article>
+      <h2>My Skills</h2>
+      <p>Frontend, Backend, Android app developer</p>
+      <h3>Languages</h3>
+      <p>Python, C, Java, Javascript, WebGL</p>
+      <h3>Database</h3>
+      <p>SQLlite, PostgreSQL, Mysql, Mongo DB</p>
+      <h3>Web Application</h3>
+      <p>React, Django, CSS, HTML</p>
+      <h3>Android Application</h3>
+      <p>Java, Firebase</p>
+      <h3>Editing Tools</h3>
+      <p>Android Studio, Visual Studio Code</p>
+      <h3>Speake</h3>
+      <p>Chinese, English</p>
+    </article>
+  </section>
+
+  <section id="project">
+    <div id="project-container">
+      <h2>Projects</h2>
+
+      <div id="myBtnContainer">
+        <button class="filter-btn active" onclick="filterSelection('all')">
+          Show all
+        </button>
+        <button class="filter-btn" onclick="filterSelection('web')">
+          Website
+        </button>
+        <button class="filter-btn" onclick="filterSelection('app')">
+          Android App
+        </button>
+        <button class="filter-btn" onclick="filterSelection('mt')">
+          Multimedia Technology
+        </button>
+        <button class="filter-btn" onclick="filterSelection('other')">
+          other
+        </button>
+      </div>
+      <div class="filter-container">
+        <div class="filterDiv web">
+          <div class="responsive">
+            <div class="gallery">
+              <div class="carousel-warp">
+                <div class="one_box">
+                  <img loading="lazy" class="image" src="img/sw1.png" alt="Cinque Terre" width="600" height="400" />
+                </div>
+              </div>
+              <div class="middle">
+                <div class="text">Edmonton Safewalk</div>
+              </div>
+
+              <a id="button-1" class="more-button" target="_blank" href="./proj/edmontonsafewalk.html">Edmonton
+                safewalk!<img id="arrow-hover" src="img/arrow.png" /></a>
+            </div>
+          </div>
+        </div>
+        <div class="filterDiv app">
+          <div class="responsive">
+            <div class="gallery">
+              <div class="carousel-warp">
+                <div class="one_box" width="100" height="400">
+                  <img loading="lazy" class="image_thin" src="img/ht2.png" alt="add photo" width="600" height="400" />
+                </div>
+              </div>
+              <div class="middle">
+                <div class="text">Habit Tracker</div>
+              </div>
+
+              <a id="button-1" class="more-button" target="_blank"
+                href="https://github.com/CMPUT301F21T27/Habit-tracker/wiki">Habit Tracker!<img id="arrow-hover"
+                  src="img/arrow.png" /></a>
+            </div>
+          </div>
+        </div>
+<!--         <div class="filterDiv mt">
+          <div class="responsive">
+            <div class="gallery">
+              <div class="carousel-warp">
+                <div class="one_box">
+                  <img loading="lazy" class="image" src="" alt="Olympic symbol" width="600" height="400" />
+                </div>
+              </div>
+              <div class="middle">
+                <div class="text">Olympic Symbol!</div>
+              </div>
+              <a id="button-1" class="more-button" target="_blank" href="./proj/olympicSymbol.html">Olympic symbol!<img
+                  id="arrow-hover" src="img/arrow.png" /></a>
+            </div>
+          </div>
+        </div> -->
+        <div class="filterDiv mt">
+          <div class="responsive">
+            <div class="gallery">
+              <div class="carousel-warp">
+                <div class="one_box">
+                  <img loading="lazy" class="image" src="img/cube.png" alt="Cube" width="600" height="400" />
+                </div>
+              </div>
+              <div class="middle">
+                <div class="text">Cube</div>
+              </div>
+              <a id="button-1" class="more-button" target="_blank" href="./proj/cube.html">Cube!<img id="arrow-hover"
+                  src="img/arrow.png" /></a>
+            </div>
+          </div>
+        </div> 
+        <div class="filterDiv mt">
+          <div class="responsive">
+            <div class="gallery">
+              <div class="carousel-warp">
+                <div class="one_box">
+                  <img loading="lazy" class="image" src="./img/pointr2.png" alt="Cinque Terre" width="600"
+                    height="400" />
+                </div>
+              </div>
+              <div class="middle">
+                <div class="text">3D Model Compeleting</div>
+              </div>
+              <a id="button-1" class="more-button" target="_blank" href="./proj/pointr.html">3D Compeleting!<img
+                  id="arrow-hover" src="img/arrow.png" /></a>
+            </div>
+          </div>
+        </div>
+        <div class="filterDiv web">
+          <div class="responsive">
+            <div class="gallery">
+              <div class="carousel-warp">
+                <div class="one_box">
+                  <img loading="lazy" class="image" src="img/404.png" alt="remote page" width="600" height="400" />
+                </div>
+              </div>
+              <div class="middle">
+                <div class="text">Social Distribution Project</div>
+              </div>
+              <a id="button-1" class="more-button" target="_blank" href="./proj/cmput-404-project.html">cmput 404
+                project!<img id="arrow-hover" src="img/arrow.png" /></a>
+            </div>
+          </div>
+        </div>
+        <div class="filterDiv web">
+          <div class="responsive">
+            <div class="gallery">
+              <div class="carousel-warp">
+                <div class="one_box">
+                  <img loading="lazy" class="image" src="img/home.png" alt="Cinque Terre" width="600" height="400" />
+                </div>
+              </div>
+              <div class="middle">
+                <div class="text">Github Page</div>
+              </div>
+              <a id="button-1" class="more-button" target="_blank"
+                href="https://github.com/jackie174/jackie174.github.io">My github page!<img id="arrow-hover"
+                  src="img/arrow.png" /></a>
+            </div>
+          </div>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact-me">
+    <div id="contact-me-container">
+      <div class="rows">
+        <h2 style="text-align: center">Contact me</h2>
+        <div class="vl">
+          <span class="vl-innertext">or</span>
+        </div>
+
+        <div class="col">
+          <a href="https://github.com/jackie174" target="_blank" class="github btn">
+            <i class="fa fa-github fa-fw"></i> GitHub
+          </a>
+          <a href="https://www.linkedin.com/in/peng-cheng-345b9622b" target="_blank" class="linkedin btn"><i
+              class="fa fa-linkedin fa-fw"> </i> Linkedin
+          </a>
+          <a href="https://cdn.discordapp.com/attachments/953574399980736543/973147595046277210/mmqrcode1652086768299.png"
+            target="_blank" class="wechat btn">
+            <i class="fa fa-wechat fa-fw"></i> Wechat
+          </a>
+        </div>
+
+        <div class="col">
+          <div class="hide-md-lg">
+            <p>Or send email below:</p>
+          </div>
+          <form action="https://formspree.io/f/meqnvjjv" method="POST">
+            <label>
+              Your email:
+              <input type="email" name="email" required />
+            </label>
+            <label>
+              Your message:
+              <textarea name="message" required></textarea>
+            </label>
+            <label>
+              Your name:
+              <input type="name" name="name" required />
+            </label>
+            <button class="send-button" type="submit">Send</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script type="text/javascript" src="js/navbar.js"></script>
+  <script type="text/javascript" src="js/filter.js"></script>
+  <script type="text/javascript" src="js/image.js"></script>
+
+  <footer>
+    <div class="footer_bottom">
+      <span>Copyright © 2022 by Peng Cheng. All Rights Reserved</span>
+    </div>
+  </footer>
+</body>
+
+</html>

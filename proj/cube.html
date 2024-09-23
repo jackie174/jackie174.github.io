@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+  <link href="../theme/project.css" rel="stylesheet" />
+  <title>peng cheng- Fold Cube</title>
+  <meta charset="utf-8" />
+  <meta name="generator" content="Pelican" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="shortcut icon" type="image/x-icon" href="../theme/favicon.ico" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    body {
+      font-family: "Times New Roman", Georgia, Serif;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: "Playfair Display";
+      letter-spacing: 5px;
+    }
+
+    .w3-image {
+      display: block;
+    }
+
+    .video {
+      display: block;
+      margin: 0 auto;
+    }
+
+    table,
+    th,
+    td {
+      border: 1px solid black;
+    }
+
+    .arrow {
+      width: 50px;
+    }
+
+    .line {
+      margin-top: 14px;
+      width: 20px;
+      background: blue;
+      height: 10px;
+      float: left;
+    }
+
+    .point {
+      width: 0;
+      height: 0;
+      border-top: 20px solid transparent;
+      border-bottom: 20px solid transparent;
+      border-left: 30px solid blue;
+      float: right;
+    }
+  </style>
+</head>
+
+<body onload="main()">
+  <!-- Navbar (sit on top) -->
+  <div class="w3-top">
+    <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing: 4px">
+      <a href="#home" class="w3-bar-item w3-button">Fold Cube</a>
+
+
+      <!-- Right-sided navbar links. Hide them on small screens -->
+      <div class="w3-right w3-hide-small">
+        <a href="#about" class="w3-bar-item w3-button">About</a>
+        <!-- <a href="#Overview" class="w3-bar-item w3-button">Overview</a> -->
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+
+  <!-- Header -->
+  <header class="w3-display-container w3-content w3-wide" style="max-width: auto; min-width: 500px" id="home">
+    <br>
+
+    <canvas id="webgl" width="400" height="400" style="display: block;margin:20px 0">
+      Please use a browser that supports "canvas"
+    </canvas>
+    <div class="arrow">
+      <div class="line"></div>
+      <div class="point"></div>
+
+      
+    </div>
+    <h5>Drag the arrow to folding the cube!</h5>
+    <hr>
+
+
+    <script src="../cube/lib/webgl-debug.js"></script>
+    <script src="../cube/lib/webgl-utils.js"></script>
+    <script src="../cube/lib/cuon-utils.js"></script>
+    <script src="../cube/lib/cuon-matrix.js"></script>
+    <script src="../cube/lib/init.js"></script>
+    <script src="../cube/Square.js"></script>
+    <script src="../cube/FoldingCube.js"></script>
+  </header>
+
+  <!-- Page content -->
+  <div class="w3-content" style="max-width: 1100px">
+    <!-- About Section -->
+    <div class="w3-row w3-padding-64" id="about">
+      <div class="w3-col m6 w3-padding-large w3-hide-small" style="margin-top: 200px;">
+
+        <br>
+        <br>
+        <iframe width="500" height="350" src="https://www.youtube.com/embed/awi4oCiKLoE" title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
+
+      <div class="w3-col m6 w3-padding-large">
+        <h1 class="w3-center">Folding Cube-Webgl</h1>
+        <div class="w3-center">
+          <img src="../svg/WebGL_Logo.svg" width=auto height=20px />
+        </div>
+        <h5 class="w3-center">Peng Cheng</h5>
+        <p class="w3-large">
+          Use Webgl to folding the cube.
+
+        </p>
+
+
+      </div>
+    </div>
+
+    <hr />
+
+
+
+    <!-- End page content -->
+  </div>
+
+
+  <!-- Footer -->
+  <footer class="w3-center w3-light-grey w3-padding-15">
+    <p>
+      Powered by
+      <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank"
+        class="w3-hover-text-green">w3.css</a>
+    </p>
+  </footer>
+</body>
+
+</html>
