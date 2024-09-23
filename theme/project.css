@@ -1,7 +1,10 @@
 .gallery {
-  border: 1px solid #ccc;
+  border: 2px solid #ccc;
   position: relative;
   min-height: 200px;
+  border-top-left-radius: 5%;
+  border-top-right-radius: 5%;
+  border-radius:5%;
 }
 
 @keyframes fade {
@@ -27,6 +30,9 @@
   width: 100%;
   height: 100%;
   flex: 1;
+  border-top-left-radius: 5%;
+  border-top-right-radius: 5%;
+  
 }
 
 .one_box {
@@ -36,6 +42,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  
 }
 
 .box {
@@ -117,7 +124,7 @@
 
 
 .middle {
-  transition: 1s ease;
+  transition: 0.5s ease;
   opacity: 0;
   position: absolute;
   top: 40%;
@@ -130,14 +137,14 @@ div.gallery:hover .image {
   opacity: 0.3;
 }
 div.gallery:hover .image_thin {
-  opacity: 0.3;
+  opacity: 0.1;
 }
 div.gallery:hover .middle {
   opacity: 1;
 }
 
 div.gallery:hover .text {
-  animation: grow 1s;
+  animation: grow 0.5s;
 }
 
 .text {

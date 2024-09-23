@@ -136,21 +136,20 @@ section#volunteer {
 }
 
 section#contact-me {
-	padding: 20px;
-	margin: 0px auto;
-	min-height: 100vh;
-	background-color: #0000008e;
-	color: #ffffff;
+	padding:10px;
+	min-height: 50vh;
+	background-color: #0000003a;
+	color: #020000;
 }
 
 #project-container {
 	margin: auto;
 	width: 100%;
 	border: 5px solid #ffffff;
-	padding-top: 10px;
-	padding-right: 50px;
+	padding-top: 5px;
+	padding-right: 80px;
 	padding-bottom: 10px;
-	padding-left: 50px;
+	padding-left: 80px;
 }
 
 article {

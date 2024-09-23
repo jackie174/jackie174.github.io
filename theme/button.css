@@ -54,6 +54,9 @@ a#button-1 {
   width: 100%;
   border: 5px solid #ffffff;
   padding: 15px;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  
 }
 
 
@@ -62,10 +65,10 @@ a#button-1 {
 /* First Button */
 
 #arrow-hover {
-  width: 45px;
+  width: 40px;
   height: 25px;
   position: absolute;
-  transform: translateX(200px);
+  transform: translateX(180px);
   opacity: 0;
   -webkit-transition: all .25s cubic-bezier(.14, .59, 1, 1.01);
   transition: all .15s cubic-bezier(.14, .59, 1, 1.01);
@@ -80,7 +83,7 @@ a#button-1:hover i {
 }
 a#button-1:hover img {
   opacity: 1;
-  transform: translateX(100px);
+  transform: translateX(120px);
 }
 
 
