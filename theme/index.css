@@ -45,7 +45,7 @@ body {
 	animation-duration: 1s, 1s, 1s;
 	animation-iteration-count: 1;
 	border-radius: 5px;
-	box-shadow: #008aff;
+	box-shadow: #479fed;
 }
 
 @keyframes fadeInOut {
@@ -100,7 +100,7 @@ nav a:hover {
 }
 
 section {
-	min-height: 80vh;
+	min-height: 20vh;
 }
 
 section#home {
@@ -108,6 +108,7 @@ section#home {
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: 100% 100%;
+	height: 40vh;
 }
 
 section#about-me {
