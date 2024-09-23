@@ -109,7 +109,7 @@
 .image_thin {
   opacity: 1;
   display: block;
-  width: 45%;
+  width: 30%;
   height: 100%;
   transition: 1s ease;
   backface-visibility: hidden;
